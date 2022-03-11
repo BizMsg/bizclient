@@ -6,6 +6,7 @@
 
 * [사전 준비](agent/undefined.md)
 * [Agent 설치](agent/agent.md)
+* [Agent 설정](agent/agent-1.md)
 
 ## 참고사항 <a href="#reference" id="reference"></a>
 
@@ -22,5 +23,4 @@
 
 ***
 
-* [Agent 설정](agent-1.md)
 * [Document History](document-history.md)
