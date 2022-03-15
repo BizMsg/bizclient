@@ -39,3 +39,16 @@
 |     AD\_FLAG     |          FT         |  N  |     | String |   1  |                              광고성 메시지 필수 표기 사항을 노출 (노출여부 Y/N, 기본값 Y)                             |
 |    RCS\_REFKEY   |         RCS         |  N  |     | String |  32  |                                           RCS 테이블 KEY                                           |
 
+
+
+|       컬럼 명      | 필수입력 여부 |   타입   |  길이  |                                    설명                                    |
+| :-------------: | :-----: | :----: | :--: | :----------------------------------------------------------------------: |
+|      REFKEY     |    Y    | String |  32  |              <p>테이블 참조키</p><p>MSG_TABLE 일 경우 Primary Key</p>             |
+|   CHATBOT\_ID   |    Y    | String |  40  |                          RCS 비즈센터를 통해 생성한 챗봇 ID                          |
+|      HEADER     |    Y    | String |   1  |                     메시지 상단에 식별 문구를 입력 (0:Web 발신,1:광고)                    |
+|      FOOTER     |    N    | String |  64  |                           메시지 하단에 수신 거부 문구를 입력.                          |
+| MESSAGEBASE\_ID |    Y    | String |  40  | RCS 공통포맷 또는 템플릿 ID (RCS SMS, LMS, MMS 공통포맷, 템플릿은 별도등록) \*5.5RCS 공통 포맷 참조 |
+|  COPY\_ALLOWED  |    N    | String |   1  |               단말기에서 사용자에게 ‘복사’/’공유’ 메뉴 보기 여부 (Y / N, 기본 N)               |
+|    RCS\_BODY    |    Y    | String | 2000 |                      메시지 베이스에서 치환할 파라미터 정보 (Json 형식)                     |
+|     BUTTONS     |    N    | String | 2000 |                         메시지에 삽입할 버튼 정보 (Json 형식)                         |
+
