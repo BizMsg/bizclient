@@ -1,6 +1,8 @@
 # PHONE
 
-
+{% hint style="warning" %}
+1000번대 코드는 일반전화, 2000번대 코드는 휴대전화로 구분된다.
+{% endhint %}
 
 
 
