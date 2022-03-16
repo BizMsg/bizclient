@@ -26,6 +26,7 @@
   * [RCS](reference/undefined-1/rcs.md)
   * [PHONE](reference/undefined-1/phone.md)
   * [FAX](reference/undefined-1/fax.md)
+* [Supplement](reference/supplement.md)
 
 ***
 

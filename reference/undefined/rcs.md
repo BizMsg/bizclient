@@ -51,7 +51,7 @@ key : title, media, description
 }
 ```
 
-
+URL 예시 – maapfile://BR.i6dOpSm8N8.20200302150000.001
 
 
 
@@ -59,13 +59,89 @@ key : title, media, description
 
 RCS 에 버튼 링크를 추가하고자 할 경우 아래와 같은 JSON 형식에 맞춰 RCS 테이블(BIZ\_RCS)의 BUTTONS 필드에 입력합니다.
 
-
-
 ```sql
 INSERT INTO biz_msg ( 
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, RCS_REFKEY)
 
 VALUES (
 8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’, {RCS_REFKEY})
+```
+
+
+
+#### 버튼 구조 (JSON)
+
+* [BUTTONS](../supplement.md#buttons)
+  * [suggestions](../supplement.md#suggestions)
+    * [postback](../supplement.md#postback)
+    * [action](../supplement.md#action)
+      * [urlAction](../supplement.md#urlaction)
+      * [dialerAction](../supplement.md#dialeraction)
+      * [mapAction](../supplement.md#mapaction)
+      * [mapAction](../supplement.md#mapaction-1)
+      * [calendarAction](../supplement.md#calendaraction)
+      * [composeAction](../supplement.md#composeaction)
+      * [clipboardAction](../supplement.md#clipboardaction)
+
+
+
+**action 예시)**
+
+버튼 표현 방식 3장의 카드이고 2, 0, 1의 버튼이 있다고 가정하면 **** BUTTONS는 아래와 같이 구성 할 수 있습니다. \
+( JSON KEY 대소문자 구분 )
+
+```json5
+{
+  "BUTTONS": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google.com"
+              }
+            },
+            "displayText": "Open website or deep link",
+            "postback": {
+              "data": "set_by_chatbot_open_url"
+            }
+          }
+        },
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google2.com"
+              }
+            },
+            "displayText": "Open website or deep link",
+            "postback": {
+              "data": "set_by_chatbot_open_url_2"
+            }
+          }
+        }
+      ]
+    },
+    {},
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google2.com"
+              }
+            },
+            "displayText": "Open website or deep link",
+            "postback": {
+              "data": "set_by_chatbot_open_url_2"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
 ```
 
