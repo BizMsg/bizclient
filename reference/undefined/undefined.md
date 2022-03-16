@@ -60,5 +60,31 @@ INSERT INTO biz_msg (MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME,
 DEST_PHONE, SEND_PHONE, MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE)
 
 VALUES (6, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, {템플릿코드}, {발신프로필키}, ‘82’)
+‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, {템플릿코드}, {발신프로필키}, ‘82’
+```
+
+
+
+### BI/BW (고정형) 발송
+
+브랜드톡(고정형)은 비즈뿌리오 서버에 등록된 사용 가능한 발신프로필 키와 템플릿코드를 사용하여 발송되며
+
+발신 프로필(옐로우아이디 또는 플러스 친구)과 친구 여부에 따라 전송되는 말풍선이 모양이 달라집니다. \
+\* 템플릿 등록 시 텍스트 메시지, 링크 버튼, 이미지(일반, 와이드)를 등록하여 사용 가능합니다.\
+(단, 발송하는 MSG\_TYPE 과 TEMPLATE\_CODE 의 이미지 타입이 다르다면 발송이 되지 않습니다.)
+
+```sql
+INSERT INTO biz_msg (MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, 
+DEST_PHONE, SEND_PHONE, TEMPLATE_CODE, SENDER_KEY, NATION_CODE)
+
+VALUES (11, ‘201XXXXXXXXX’, NOW(), NOW(), 
+‘01012341234’, ‘0212341234’, {템플릿코드}, {발신프로필키}, ‘82’)
+```
+
+```sql
+INSERT INTO biz_msg (MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, 
+DEST_PHONE, SEND_PHONE, TEMPLATE_CODE, SENDER_KEY, NATION_CODE)
+
+VALUES (12, ‘201XXXXXXXXX’, NOW(), NOW(), 
+‘01012341234’, ‘0212341234’, {템플릿코드}, {발신프로필키}, ‘82’)
 ```
