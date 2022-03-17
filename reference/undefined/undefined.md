@@ -136,15 +136,15 @@ VALUES (
 
 
 
-전문 방식 테이블 상세 정
+****[**전문 방식 테이블 상세 정보**](../supplement.md#bi-bw)****
 
 
 
-변수 분리 방식 테이블 상세 정보
+****[**변수 분리 방식 테이블 상세 정보**](../supplement.md#bi-bw-1)****
 
 
 
-파라미터
+****[**파라미터 정보**](../supplement.md#bi-bw-2)****
 
 
 
@@ -373,7 +373,32 @@ VALUES (
 
 
 
+**AT + ATTACHMENT**
 
+```sql
+INSERT INTO biz_msg (
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE, ATTACHED_FILE)
 
+VALUES (
+6, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{템플릿코드}, {발신프로필키}, ‘82’, ‘{파일명}.json’)
+```
 
+**FT + ATTACHMENT**
+
+```sql
+INSERT INTO biz_msg (
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+MSG_BODY, SENDER_KEY, NATION_CODE,ATTACHED_FILE)
+
+VALUES (7, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{발신프로필키}, ‘82’, ‘{파일명}.json’)
+```
+
+****
+
+**AT/FT ATTACHMENT 정보 및 보충자료**
 
