@@ -215,3 +215,79 @@ VALUES (
 
 > 대체 발송이 이루어진 경우, 클라이언트는 수신 받은 리포트를 업데이트하는 시점에 대체 발송에 대한 정보를 추가 레코드로 신규 생성하게 됩니다. \
 > RCS 와 대체 발송에 대한 레코드의 매핑 키는 알림톡/친구톡의 UMID 필드가 대체 발송의 CMID 필드로 이루어집니다.
+
+
+
+
+
+### RCS + 2차 대체 발송
+
+RCS 결과 실패 시 지정하신 1 차 대체 발송 타입(AT/FT)을 발송하며 알림톡/친구톡 발송 결과 실패 시 지정하신 2 차 대체 발송 타입(SMS/MMS)과 대체 발송 본문을 사용하여 발송됩니다.\
+\
+알림톡/친구톡 대체 발송의 경우 MSG\_BODY 필드의 데이터를 사용하여 발송되며 SMS/MMS 대체 발송의 경우 대체 발송 본문에 대해 알림톡/친구톡과 동일 본문(MSG\_BODY)을 사용하려면, 대체 발송 메시지 필드(RE\_BODY)를 비워두시면 됩니다.
+
+단, 비즈뿌리오 ID 가 대체 발송 사용 가능하도록 설정되어 있어야 합니다.\
+SMS 대체발송의 경우에는 메시지 본문 (MSG\_BODY) 길이가 SMS 의 허용 길이를 초과하였을 때 발송되지 않습니다.
+
+
+
+알림톡/친구톡 대체 발송의 경우 MSG\_BODY 필드의 데이터를 사하여 발송됩니다.
+
+**RCS + AT(1차) + SMS(2차)**
+
+```sql
+INSERT INTO biz_msg ( 
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+RCS_REFKEY, RE_TYPE, MSG_BODY,TEMPLATE_CODE, SENDER_KEY, NATION_CODE, RE_BODY ) 
+
+VALUES (
+8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+{RCS_REFKEY}, ‘KS’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{템플릿코드}, {발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’)
+```
+
+**RCS + AT(1차) + SMS(2차)**
+
+```sql
+INSERT INTO biz_msg ( 
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+RCS_REFKEY, RE_TYPE, MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE, RE_BODY,
+ATTACHED_FILE )
+
+VALUES (
+8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+{RCS_REFKEY}, ‘KM’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{템플릿코드}, {발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’, {첨부파일.jpg})
+```
+
+**RCS + FT(1차) + SMS(2차)**
+
+```sql
+INSERT INTO biz_msg ( 
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+RCS_REFKEY, RE_TYPE, MSG_BODY, SENDER_KEY, NATION_CODE, RE_BODY )
+
+VALUES (8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+{RCS_REFKEY}, ‘BS’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’)
+```
+
+**RCS + FT(1차) + SMS(2차)**
+
+```sql
+INSERT INTO biz_msg ( 
+MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
+RCS_REFKEY, RE_TYPE, MSG_BODY, SENDER_KEY, NATION_CODE, RE_BODY, ATTACHED_FILE )
+
+VALUES (8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
+{RCS_REFKEY}, ‘BM’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
+{발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’, {첨부파일.jpg})
+```
+
+> 대체 발송이 이루어진 경우, 클라이언트는 수신 받은 리포트를 업데이트하는 시점에 대체 발송에 대한 정보를 추가 레코드로 신규 생성하게 됩니다. \
+> RCS 와 대체 발송에 대한 레코드의 매핑 키는 RCS 의 UMID 필드가 대체 발송의 CMID 필드로 이루어집니다.
+
+> 2차 대체 발송이 이루어진 경우,RCS의 UMID값 앞에 “RE\_”이 추가된 문자열이 2차 대체발송의 CMID 필드로 이루어지며 1 차 대체발송의 UMID 도 같은 값으로 설정됩니다..
+
+
+
