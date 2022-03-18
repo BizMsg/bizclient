@@ -35,4 +35,5 @@
 ***
 
 * [Page 1](page-1.md)
+* [Appendix](appendix.md)
 * [Document History](document-history.md)
