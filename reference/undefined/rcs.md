@@ -55,6 +55,31 @@ URL 예시 – maapfile://BR.i6dOpSm8N8.20200302150000.001
 
 
 
+### RCS 공통포맷 (MESSAGEBASE\_ID)
+
+| MESSAGEBASE\_ID |  상품 |         메시지 타입        | 카드 장 수 | 최대 버튼 수 | 메시지 최대 본문 길이 (글자수) |   |
+| :-------------: | :-: | :-------------------: | :----: | :-----: | :----------------: | - |
+|     SS000000    | SMS |       Standalone      |    1   |    1    |         100        |   |
+|     SL000000    | LMS |       Standalone      |    1   |    3    |        1300        |   |
+|     SMwThT00    | MMS |  Standalone Media Top |    1   |    2    |        1300        |   |
+|     SMwThM00    | MMS | Standalone Media Top' |    1   |    2    |        1300        |   |
+|     SMwLhX00    | MMS | Standalone Horizontal |    1   |    2    |        1300        |   |
+|     SMwRHX00    | MMS | Standalone Horizontal |    1   |    2    |        1300        |   |
+|    CMwMhM0300   | MMS |    Carousel Medium    |    3   |    2    |     1300 (총 합)     |   |
+|    CMwMhM0400   | MMS |    Carousel Medium    |    4   |    2    |     1300 (총 합)     |   |
+|    CMwMhM0500   | MMS |    Carousel Medium    |    5   |    2    |     1300 (총 합)     |   |
+|    CMwMhM0600   | MMS |    Carousel Medium    |    6   |    2    |     1300 (총 합)     |   |
+|    CMwShS0300   | MMS |     Carousel Small    |    3   |    2    |     1300 (총 합)     |   |
+|    CMwShS0400   | MMS |     Carousel Small    |    4   |    2    |     1300 (총 합)     |   |
+|    CMwShS0500   | MMS |     Carousel Small    |    5   |    2    |     1300 (총 합)     |   |
+|    CMwShS0600   | MMS |     Carousel Small    |    6   |    2    |     1300 (총 합)     |   |
+
+> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
+
+> 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
+
+###
+
 ### RCS + BUTTONS
 
 RCS 에 버튼 링크를 추가하고자 할 경우 아래와 같은 JSON 형식에 맞춰 RCS 테이블(BIZ\_RCS)의 BUTTONS 필드에 입력합니다.
