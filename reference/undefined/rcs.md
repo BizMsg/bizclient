@@ -147,6 +147,31 @@ VALUES (
 
 
 
+
+
+### 대체 발송 타입 (RE\_TYPE)
+
+1차 대체발송 타입에 따라 최대 2 차 대체발송까지 가능합니다.
+
+| 1차 대체 발송 | 2차 대체 발송 | RE\_TYPE 입력값 |
+| :------: | :------: | :----------: |
+|    SMS   |          |      SMS     |
+|    MMS   |          |      MMS     |
+|    AT    |          |       K      |
+|    AT    |    SMS   |      KS      |
+|    AT    |    MMS   |      KM      |
+|    FT    |          |              |
+|    FT    |    SMS   |      BS      |
+|    FT    |    MMS   |      BM      |
+|    BI    |          |       I      |
+|    BI    |    SMS   |      IS      |
+|    BI    |    MMS   |      IM      |
+|    BW    |          |       W      |
+|    BW    |    SMS   |      WS      |
+|    BW    |    MMS   |      WM      |
+
+###
+
 ### RCS + 1차 대체 발송
 
 RCS 결과 실패 시 지정하신 대체발송타입(SMS/MMS/AT/FT)과 대체발송본문을 사용하여 발송됩니다.

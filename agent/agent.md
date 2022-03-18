@@ -28,3 +28,6 @@
    _**``**_중지 : <mark style="color:orange;">service-uninstall.bat</mark>\
 
 
+{% hint style="info" %}
+uds.conf 파일은 EUC-KR 로 인코딩 되어 있습니다.
+{% endhint %}
