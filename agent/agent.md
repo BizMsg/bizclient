@@ -25,7 +25,7 @@
    &#x20;  제어판 → 관리도구 → 서비스 (Daoutech BizClient 서비스를 통하여 직접 시작/종료 가능)\
    시작 : service-start.bat 실행
 4. 비즈클라이언트를 중지합니다. _**`{모듈경로}/bat`**_\
-   _**``**_중지 : <mark style="color:orange;">service-uninstall.bat</mark>\
+   _**``**_중지 : <mark style="color:orange;">service-stop.bat</mark> \ <mark style="color:orange;"></mark>삭제 <mark style="color:orange;"></mark> : <mark style="color:orange;">service-uninstall.bat</mark>\
 
 
 {% hint style="info" %}
