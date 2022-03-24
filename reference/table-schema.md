@@ -29,16 +29,16 @@ _\*표시 컬럼은 비즈클라이언트에서 사용_
 |   REQUEST\_TIME  |          공통         |  Y  | now |        |      |                                                                   데이터 등록 시간                                                                   |
 |    SEND\_TIME    |          공통         |  Y  | now |        |      |                                                                    발송 기준 시간                                                                   |
 |   REPORT\_TIME   |          공통         |  N  |     |        |      |                                                                   단말기 수신 시간                                                                   |
-|    DEST\_PHONE   |          공통         |  Y  |     | String |  16  |                                                                      수신번호                                                                     |
+|    DEST\_PHONE   |          공통         |  Y  |     | String |  16  |                                                                     수신 번호                                                                     |
 |    DEST\_NAME    |          공통         |  N  |     | String |  32  |                                                                      수신자명                                                                     |
-|    SEND\_PHONE   |          공통         |  Y  |     | String |  16  |                                                                     발신자번호                                                                     |
+|    SEND\_PHONE   |          공통         |  Y  |     | String |  16  |                                                                     발신자 번호                                                                    |
 |    SEND\_NAME    |          공통         |  N  |     | String |  32  |                                                                      발신자명                                                                     |
-|      SUBJECT     |       FAX/MMS       |  N  |     | String |  64  |                                                                       제                                                                       |
+|      SUBJECT     |       FAX/MMS       |  N  |     | String |  64  |                                                                       제목                                                                      |
 |     MSG\_BODY    |          공통         |  Y  |     | String | 2000 |                                                                     메시지 내용                                                                    |
 |   NATION\_CODE   |     AT/FT/BI/BW     |  Y  |     | String |   5  |                                                                      국가코드                                                                     |
 |    SENDER\_KEY   |     AT/FT/BI/BW     |  Y  |     | String |  40  |                                                                    발신프로필 키                                                                    |
 |  TEMPLATE\_CODE  |     AT/FT/BI/BW     |  Y  |     | String |  64  |                                                                     템플릿 코드                                                                    |
-| RESPONSE\_METHOD |          AT         |  N  |     | String |   8  |                                                                  발송 방식 (PUSH)                                                                 |
+| RESPONSE\_METHOD |          AT         |  N  |     | String |   8  |                                                                  발송 방식(PUSH)                                                                  |
 |      TIMEOUT     |        AT/FT        |  N  |     | String |   4  |                                                               대체발송을 위한 타임아웃 시간설정                                                              |
 |     RE\_TYPE     |        AT/FT        |  N  |     | String |   3  | <p>대체발송 메시지 타입  <a href="undefined/undefined.md#re_type">*대체발송타입(카카오비즈메시지)</a> <br><a href="undefined/rcs.md#re_type">*대체발송타입(RCS)</a> 참조</p> |
 |     RE\_BODY     |   AT/FT/BI/BW/RCS   |  N  |     | String | 2000 |                                                                  대체발송 메시지 내용                                                                  |
@@ -46,10 +46,10 @@ _\*표시 컬럼은 비즈클라이언트에서 사용_
 |    COVER\_FLAG   |         FAX         |  N  |  0  | Number |   1  |                                                                    표지 발송 옵션                                                                   |
 |     SMS\_FLAG    |        PHONE        |  N  |  0  | Number |   1  |                                                                 실패 시 문자 전송 옵션                                                                 |
 |    REPLY\_FLAG   |        PHONE        |  N  |  0  | Number |   1  |                                                             시나리오 답변기능 여부(Y:1, N:0)                                                            |
-|    RETRY\_CNT    |      FAX/PHONE      |  N  |     | Number |   4  |                                                                     재시도 수                                                                     |
-|  ATTACHED\_FILE  | MMS/FAX/PHONE/AT/FT |  N  |     | String | 1000 |                    <p>[기본 MODE ] <br>첨부파일 전송 시 파일명<br>(여러 개일 경우, |(파이프라인) 문자로 구분)<br>[첨부파일 테이블 MODE ] <br>첨부파일 테이블 KEY</p>                    |
+|    RETRY\_CNT    |      FAX/PHONE      |  N  |     | Number |   4  |                                                                     재시도 횟수                                                                    |
+|  ATTACHED\_FILE  | MMS/FAX/PHONE/AT/FT |  N  |     | String | 1000 |            <p>[기본 MODE ] <br>첨부파일 전송 시 파일명<br>(여러 개일 경우, <strong>|</strong>(파이프라인) 문자로 구분)<br>[첨부파일 테이블 MODE ] <br>첨부파일 테이블 KEY</p>           |
 |    VXML\_FILE    |        PHONE        |  N  |     | String |  64  |                                                                 음성 시나리오 파일 이름                                                                 |
-|   CALL\_STATUS   |          공통         |  N  |     | String |   4  |                                                                    발송결과 리포트                                                                   |
+|   CALL\_STATUS   |          공통         |  N  |     | String |   4  |                                                                   발송 결과 리포트                                                                   |
 |     USE\_PAGE    |         FAX         |  N  |  0  | Number |   2  |                                                                    발송 페이지 수                                                                   |
 |     USE\_TIME    |        PHONE        |  N  |  0  | Number |   4  |                                                                발송 소요 시간 (단위:초)                                                                |
 |    SN\_RESULT    |        PHONE        |  N  |  0  | Number |   1  |                                                               설문 조사 응답 값 (0\~9)                                                               |
@@ -59,13 +59,17 @@ _\*표시 컬럼은 비즈클라이언트에서 사용_
 |     AD\_FLAG     |          FT         |  N  |     | String |   1  |                                               <p>광고성 메시지 필수 표기 사항을 노출 <br>(노출여부 Y/N, 기본값 Y)</p>                                               |
 |    RCS\_REFKEY   |         RCS         |  N  |     | String |  32  |                                                                  RCS 테이블 KEY                                                                  |
 
-
+> 추가적인 인덱스는 필요에 따라 설정하여 사용하시면 됩니다.&#x20;
+>
+> 기본적으로 메시지테이블의 CMID 컬럼은 Primary Key 로 잡혀 있으며 로그테이블은 중복된 키 값을 허용할 수 있도록 PK 로 잡혀있지 않습니다. \
+> CMID 컬럼값이 중복이 될 경우 데이터 발송에는 문제가 없으나 결과 리포트 반영이 정상적으로 이루어지지 않습니다. \
+> CINFO 컬럼은 고객 회사 내에서 구분이 필요할 경우 (예를 들어 발송하는 데이터에 대해 A 팀, B 팀 등으로 구분하고 싶을 때) 해당 정보 값을 넣어서 발송하면 비즈 뿌리오 서버에서 구분이 되어 데이터가 전송 되며, biz.ppurio.com 의 \[서비스 조회 – 발송 조회]에서 SUB ID 에 해당 CINFO 값이 표시가 됩니다.
 
 
 
 ### MESSAGE\_SUPPORT\_TYPE
 
-RCS 발송 테이블 설
+MESSAGE\_SUPPORT\_TYPE 설정에 따라 RCS 발송에 사용하는 테이블을 생성합니다.
 
 {% hint style="info" %}
 MESSAGE\_SUPPORT\_TYPE 의 기본값은 RCS 발송이 제외되어 있으므로 RCS 발송을 위해서는 uds.conf 파일에 MESSAGE\_SUPPORT\_TYPE = ALL 설정을 추가 해주시기 바랍니다.
@@ -75,6 +79,10 @@ MESSAGE\_SUPPORT\_TYPE 의 기본값은 RCS 발송이 제외되어 있으므로 
 >
 > * RCS 메시지 발송을 위한 데이터가 입력되며, 메시지 테이블의 발송 결과 업데이트가 이루어지기까지 \
 >   데이터가 존재하는 테이블
+
+> RCS 로그 테이블 – BIZ\_RCS\_LOG\_YYYYMM
+>
+> * RCS 메시지 테이블에서 발송 결과 업데이트가 완료된 데이터가 이동되는 테이블
 
 {% hint style="info" %}
 RCS\_BACKUP\_OPTION(Y/N, default N)을 사용하지 않으면 \
@@ -103,6 +111,8 @@ AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../appendix.m
 ****
 
 ### FILE\_HANDLING\_MODE
+
+FILE\_HANDLING\_MODE 설정에 따라 다음과 같은 테이블을 생성합니다.
 
 > 첨부파일 테이블 : **BIZ\_ATTACHMENTS**
 >
