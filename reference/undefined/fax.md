@@ -2,8 +2,6 @@
 
 한글 100자 이하의 표지를 포함한 이미지 및 문서를 발송할 수 있습니다.
 
-\*
-
 ```sql
 INSERT INTO biz_msg (
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
