@@ -47,7 +47,7 @@ STATUS는 다음과 같은 상태 변화를 가집니다.
 
 사용자는 메시지 타입(AT/FT/BI/BW/RCS)에 따라 최대 2 차 대체발송까지 가능합니다.
 
-상세 설명은 [카카오 비즈 메시지 대체발송](undefined-1.md#re\_type) \~ [RCS 대체발송](rcs.md#re\_type) 항목을 참고하여 주시기 바랍니다.
+상세 설명은 [카카오 비즈 메시지 대체발송](undefined.md#re\_type) \~ [RCS 대체발송](rcs.md#re\_type) 항목을 참고하여 주시기 바랍니다.
 
 ### 참고
 

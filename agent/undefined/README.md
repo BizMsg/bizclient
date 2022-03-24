@@ -37,7 +37,9 @@ Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 �
 DBMS 의 버전에 따라 JDBC 드라이버의 JDK 요구사항이 달라질 수 있음.
 
 **예)** 모듈의 설정파일(uds.conf)에서 **DBNAME=MSSQL2005**으로 설정된 경우, 내부적으로 Microsoft JDBC Driver 4.1 드라이버를 사용. 해당 JDBC 드라이버는 JDK 1.7 이상 필요\
-또한 사용하는 DBMS 에 맞게 JDBC 드라이버를 변경하기 위해서는 다음 경로에 위치한 드라이버명과 동일하게 하여 교체 필요\
+또한 사용하는 DBMS 에 맞게 JDBC 드라이버를 변경하기 위해서는 다음 경로에 위치한 드라이버명과 동일하게 하여 교체 필요
+
+\
 _경로 : **{모듈위치}/lib/jdbc/{해당 JDBC 드라이버}.jar**_\
 낮은 버전의 DBMS 를 지원하기 위하여 lib/jdbc 폴더의 JDBC 드라이버는 버전이 낮게 설정 되어 있으므로 정상적인 사용을 위하여 사용하는 DBMS 버전에 맞는 JDBC 드라이버를 설치 후 위와 같이 변경 필요
 {% endhint %}

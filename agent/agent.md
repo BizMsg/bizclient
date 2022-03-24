@@ -1,7 +1,5 @@
 # Agent 설치
 
-비즈클라이언트 Agent 설치
-
 ## Linux/Unix 계열
 
 1. 비즈클라이언트를 업로드 한 뒤 압축 해제합니다. **`unzip biz_client_v3xxx.zip`**

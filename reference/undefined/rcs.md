@@ -14,7 +14,7 @@ INSERT INTO biz_msg (
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, RCS_REFKEY)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’, , {RCS_REFKEY})
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234', , {RCS_REFKEY})
 ```
 
 ****
@@ -28,21 +28,21 @@ VALUES (
 ```json5
 #1개
 {
-    “title” : “카드”,
-    “media” : “등록된 이미지 URL”, 
-    “description”: “안녕하세요!”
+    "title" : "카드",
+    "media" : "등록된 이미지 URL", 
+    "description": "안녕하세요!"
 }
 ```
 
 ```json5
 #2개 이상
 {
-    “title1” : “카드”,
-    “media1” : “등록된 이미지 URL”, 
-    “description1”: “안녕하세요!”, 
-    “title2” : “카드 2”,
-    “media2” : “등록된 이미지 URL”, 
-    “description2”: “안녕하세요!”,
+    "title1" : "카드",
+    "media1" : "등록된 이미지 URL", 
+    "description1": "안녕하세요!", 
+    "title2" : "카드 2",
+    "media2" : "등록된 이미지 URL", 
+    "description2" : "안녕하세요!",
             .
             .
             .
@@ -72,7 +72,8 @@ URL 예시 – maapfile://BR.i6dOpSm8N8.20200302150000.001
 |    CMwShS0500   | MMS |     Carousel Small    |    5   |    2    |     1300 (총 합)     |
 |    CMwShS0600   | MMS |     Carousel Small    |    6   |    2    |     1300 (총 합)     |
 
-> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
+> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나 \
+> 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
 
 > 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
 
@@ -89,7 +90,7 @@ INSERT INTO biz_msg (
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, RCS_REFKEY)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’, {RCS_REFKEY})
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234', {RCS_REFKEY})
 ```
 
 
@@ -213,8 +214,8 @@ MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME,
 DEST_PHONE, SEND_PHONE, RCS_REFKEY, RE_TYPE, RE_BODY)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’, 
-{RCS_REFKEY}, ‘SMS’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’)
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234', 
+{RCS_REFKEY}, 'SMS', '[다우기술] 응모하신 프로모션에 당첨되셨습니다.')
 ```
 
 
@@ -227,8 +228,8 @@ MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME,
 DEST_PHONE, SEND_PHONE, RCS_REFKEY, RE_TYPE, RE_BODY, ATTACHED_FILE)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-{RCS_REFKEY}, ‘MMS’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’, ‘{첨부파일.jpg}’)
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+{RCS_REFKEY}, 'MMS', '[다우기술] 응모하신 프로모션에 당첨되셨습니다.', '{첨부파일.jpg}')
 ```
 
 
@@ -243,9 +244,9 @@ MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE,
 MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE, RE_TYPE, RCS_REFKEY)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, {템플릿코드}, {발신프로필키},
-'82', ‘K’, ‘{RCS_REFKEY}’)
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+'홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', {템플릿코드}, {발신프로필키},
+'82', 'K', '{RCS_REFKEY}')
 ```
 
 **RCS + FT**
@@ -256,9 +257,9 @@ MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE,
 MSG_BODY, SENDER_KEY, NATION_CODE, RE_TYPE, RCS_REFKEY)
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-‘홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, {발신프로필키}, 
-'82', ‘B’, ‘{RCS_REFKEY}’)
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+'홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', {발신프로필키}, 
+'82', 'B', '{RCS_REFKEY}')
 ```
 
 > 대체 발송이 이루어진 경우, 클라이언트는 수신 받은 리포트를 업데이트하는 시점에 대체 발송에 대한 정보를 추가 레코드로 신규 생성하게 됩니다. \
@@ -289,9 +290,9 @@ MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE,
 RCS_REFKEY, RE_TYPE, MSG_BODY,TEMPLATE_CODE, SENDER_KEY, NATION_CODE, RE_BODY ) 
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-{RCS_REFKEY}, ‘KS’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
-{템플릿코드}, {발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’)
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+{RCS_REFKEY}, 'KS', ' 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', 
+{템플릿코드}, {발신프로필키}, '82', '[다우기술] 응모하신 프로모션에 당첨되셨습니다.')
 ```
 
 **RCS + AT(1차) + SMS(2차)**
@@ -303,9 +304,9 @@ RCS_REFKEY, RE_TYPE, MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE, RE_BODY,
 ATTACHED_FILE )
 
 VALUES (
-8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-{RCS_REFKEY}, ‘KM’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
-{템플릿코드}, {발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’, {첨부파일.jpg})
+8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+{RCS_REFKEY}, 'KM', ' 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', 
+{템플릿코드}, {발신프로필키}, '82', '[다우기술] 응모하신 프로모션에 당첨되셨습니다.', {첨부파일.jpg})
 ```
 
 **RCS + FT(1차) + SMS(2차)**
@@ -327,9 +328,9 @@ INSERT INTO biz_msg (
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, 
 RCS_REFKEY, RE_TYPE, MSG_BODY, SENDER_KEY, NATION_CODE, RE_BODY, ATTACHED_FILE )
 
-VALUES (8, ‘201XXXXXXXXX’, NOW(), NOW(), ‘01012341234’, ‘0212341234’,
-{RCS_REFKEY}, ‘BM’, ‘ 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.’, 
-{발신프로필키}, ‘82’, ‘[다우기술] 응모하신 프로모션에 당첨되셨습니다.’, {첨부파일.jpg})
+VALUES (8,'201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
+{RCS_REFKEY}, 'BM', ' 홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', 
+{발신프로필키}, '82', '[다우기술] 응모하신 프로모션에 당첨되셨습니다.', {첨부파일.jpg})
 ```
 
 > 대체 발송이 이루어진 경우, 클라이언트는 수신 받은 리포트를 업데이트하는 시점에 대체 발송에 대한 정보를 추가 레코드로 신규 생성하게 됩니다. \
