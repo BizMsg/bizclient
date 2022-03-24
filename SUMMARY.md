@@ -16,9 +16,10 @@
 
 * [Table Schema](reference/table-schema.md)
 * [메시지 발송](reference/undefined/README.md)
+  * [대체 발송 시나리오](reference/undefined/undefined.md)
   * [SMS](reference/undefined/sms.md)
   * [MMS/LMS](reference/undefined/mms-lms.md)
-  * [카카오 비즈 메시지](reference/undefined/undefined.md)
+  * [카카오 비즈 메시지](reference/undefined/undefined-1.md)
   * [RCS](reference/undefined/rcs.md)
   * [FAX](reference/undefined/fax.md)
   * [PHONE](reference/undefined/phone.md)
