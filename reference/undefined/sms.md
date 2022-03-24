@@ -1,6 +1,6 @@
 # SMS
 
-SMS (텍스트 90byte 이하의 단문 메시지)
+### SMS (텍스트 90byte 이하의 단문 메시지)
 
 ```sql
 INSERT INTO biz_msg ( 
