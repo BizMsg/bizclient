@@ -4,7 +4,7 @@
 
 ## Agent 설치
 
-* [사전 준비](agent/undefined/README.md)
+* [사전 준비](agent/pre.md)
 * [Agent 설치](agent/agent.md)
 * [Agent 설정](agent/agent-1.md)
 
