@@ -8,10 +8,6 @@
 * [Agent 설치](agent/agent.md)
 * [Agent 설정](agent/agent-1.md)
 
-***
-
-* [ToDo list](todo-list.md)
-
 ## 참고사항 <a href="#reference" id="reference"></a>
 
 * [Table Schema](reference/table-schema.md)
@@ -35,6 +31,5 @@
 
 ***
 
-* [Page 1](page-1.md)
 * [Appendix](appendix.md)
 * [Document History](document-history.md)
