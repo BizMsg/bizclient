@@ -1,6 +1,6 @@
 # 대체 발송 시나리오
 
-&#x20;                [**Original 메시지**](undefined.md)                                      ****                                      [**1차 대체 발송**](undefined.md#at-ft-+-1)                                       ****                                       [**2차 대체 발송**](undefined.md#at-ft-+-2)****
+&#x20;                [**Original 메시지**](kakao-biz.md)                                      ****                                      [**1차 대체 발송**](kakao-biz.md#at-ft-+-1)                                       ****                                       [**2차 대체 발송**](kakao-biz.md#at-ft-+-2)****
 
 ![카카오 비즈 메시지 대체 발송 시나리](<../../.gitbook/assets/image (4).png>)
 
