@@ -7,7 +7,6 @@
 
 * [Agent Install](agent/install.md)
 * [Agent Configuration](agent/setup.md)
-  * [Appendix](appendix.md)
 
 ## 참고사항 <a href="#reference" id="reference"></a>
 
@@ -29,6 +28,7 @@
   * [PHONE](reference/result-code/phone.md)
   * [FAX](reference/result-code/fax.md)
 * [Supplement](reference/supplement.md)
+* [Appendix](reference/appendix.md)
 
 ***
 
