@@ -1,4 +1,4 @@
-# Agent 설정
+# Agent Configuration
 
 **uds.conf**
 

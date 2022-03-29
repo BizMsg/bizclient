@@ -101,7 +101,7 @@ RCS 메시지 테이블의 데이터를 재사용 할 수 있습니다.
 |     BUTTONS     |    N    | String | 2000 |                                                       메시지에 삽입할 버튼 정보 (JSON 형식)                                                      |
 
 {% hint style="info" %}
-AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../agent/setup/appendix.md#rcs-agency\_id-id) 설정 참고
+AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../appendix.md#rcs-agency\_id-id) 설정 참고
 {% endhint %}
 
 ****
@@ -135,4 +135,4 @@ ATTACHMENTS\_BACKUP\_OPTION(Y/N, default N)을 사용하지 않으면
 |   TYPE   |    Y    | FILE | String |  10  |   데이터 타입 (FILE / HTTP / JSON)  |     |
 | CONTENTS |    Y    |      | String | 2000 | 데이터 값 (파일명 / URL / JSONString) |     |
 
-참고 : [\[첨부파일 관리\]](../agent/setup/appendix.md#undefined-1)
+참고 : [\[첨부파일 관리\]](../appendix.md#undefined-1)

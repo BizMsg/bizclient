@@ -1,13 +1,13 @@
 # Table of contents
 
 * [Agent 소개](README.md)
-* [사전 준비](prepare.md)
+* [사전 준비](agent/prepare.md)
 
 ## Agent 설치
 
 * [Agent Install](agent/install.md)
-* [Agent Configuration](agent/setup/README.md)
-  * [Appendix](agent/setup/appendix.md)
+* [Agent Configuration](agent/setup.md)
+  * [Appendix](appendix.md)
 
 ## 참고사항 <a href="#reference" id="reference"></a>
 
