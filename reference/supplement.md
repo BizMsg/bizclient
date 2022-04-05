@@ -271,16 +271,16 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고&#x20
 
 ### AT + 바로연결 타입별 속성
 
-|  타입 |        속성       |   타입  |  필수 |                      설명                      |
-| :-: | :-------------: | :---: | :-: | :------------------------------------------: |
-|  WL |   url\_mobile   |  text |  Y  |      바로연결 클릭 시 이동할 pc/mobile 환경별 web url     |
-|  WL |     url\_pc     |  text |  N  |      바로연결 클릭 시 이동할 pc/mobile 환경별 web url     |
-|  AL |   scheme\_ios   |  text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
-|  AL | scheme\_android |  text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
-|  AL |   url\_mobile   | texgt |  -  |         mobile 환경에서 바로연결 클릭 시 이동할 url        |
-|  AL |     url\_pc     |  text |  N  |           pc 환경에서 바로연결 클릭 시 이동할 url          |
-|  BK |        -        |   -   |  -  |                해당 바로연결 텍스트 전송                |
-|  MD |        -        |   -   |  -  |             해당 바로연결 텍스트+메시지 본문 전송            |
-|  BC |   chat\_extra   |  text |  N  |               상담톡 전환 시 전달할 메타정보              |
-|  BT |   chat\_extra   |  text |  N  |                봇 전환 시 전달할 메타정보               |
-|  BT |   chat\_event   |  text |  N  |               봇 전환 시 연결할 봇 이벤트명              |
+|  타입 |        속성       |  타입  |  필수 |                      설명                      |
+| :-: | :-------------: | :--: | :-: | :------------------------------------------: |
+|  WL |   url\_mobile   | text |  Y  |      바로연결 클릭 시 이동할 pc/mobile 환경별 web url     |
+|  WL |     url\_pc     | text |  N  |      바로연결 클릭 시 이동할 pc/mobile 환경별 web url     |
+|  AL |   scheme\_ios   | text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
+|  AL | scheme\_android | text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
+|  AL |   url\_mobile   | text |  -  |         mobile 환경에서 바로연결 클릭 시 이동할 url        |
+|  AL |     url\_pc     | text |  N  |           pc 환경에서 바로연결 클릭 시 이동할 url          |
+|  BK |        -        |   -  |  -  |                해당 바로연결 텍스트 전송                |
+|  MD |        -        |   -  |  -  |             해당 바로연결 텍스트+메시지 본문 전송            |
+|  BC |   chat\_extra   | text |  N  |               상담톡 전환 시 전달할 메타정보              |
+|  BT |   chat\_extra   | text |  N  |                봇 전환 시 전달할 메타정보               |
+|  BT |   chat\_event   | text |  N  |               봇 전환 시 연결할 봇 이벤트명              |
