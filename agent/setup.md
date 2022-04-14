@@ -97,31 +97,87 @@ USE_ORACLE_PREPARED_STATEMENT = N
 
 {% tabs %}
 {% tab title="SYBASE" %}
+```
+#################################################
+DBNAME = SYBASE
+DBURL = jdbc:sybase:Tds:<host>:<port,5000>/<db>?charset=eucksc
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="CACHE" %}
+```
+#################################################
+DBNAME = CACHE
+DBURL = jdbc:Cache://<host>:<port,1972>/<db>
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="DB2" %}
+```
+#################################################
+DBNAME = DB2
+DBURL = jdbc:db2://<host>:<port,50000>/<db>
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="EDB" %}
+```
+#################################################
+DBNAME = EDB
+DBURL = jdbc:edb://<host>:<port,5444>/<db>
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="TIBERO" %}
+```
+#################################################
+DBNAME = TIBERO
+DBURL = jdbc:tibero:thin:@<host>:<port,8629>:<db>
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="POSTGRES" %}
+```
+#################################################
+DBNAME = POSTGRES
+DBURL = jdbc:postgresql://<host>:<port,5432>/<db>
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 
 {% tab title="CUBRID" %}
+```
+#################################################
+DBNAME = CUBRID
+DBURL = jdbc:cubrid:<host>:<port,33000>:<server>:<db>::
 
+DBUSER =
+DBPASS =
+#################################################
+```
 {% endtab %}
 {% endtabs %}
 
