@@ -1,8 +1,14 @@
 # Agent Configuration
 
-## 비즈뿌리오 접속 설정
+## BizPPurio Connect
 
 ```
+#################################################
+# 비즈클라이언트 설정 파일 (Configuration)
+# Ver 3.0.1.4
+# 구동시 JDK 1.8 이상 필요
+#################################################
+
 #################################################
 # 운영    : biz.ppurio.com
 # 검수    : biztest.ppurio.com (실발송 되지 않음)
@@ -18,14 +24,38 @@ USE_SSL = Y
 #################################################
 ```
 
-## DBMS 접속 설정(JDBC Setting) &#x20;
-
-* DBMS 접속 설정
+## DBMS Connect (JDBC Setting) &#x20;
 
 {% tabs %}
-{% tab title="MSSQL" %}
+{% tab title="JDBC URL" %}
 ```
 #################################################
+# JDBC 연결 정보 (필수)
+#################################################
+# 지원 가능한 DBMS
+# MSSQL, MYSQL, ORACLE, SYBASE, CACHE, DB2, EDB, TIBERO, POSTGRES, CUBRID
+# Microsoft SQL Server 2008 이상 사용하는 경우 MSSQL2005 로 설정
+# 예) DBNAME = MYSQL
+#
+# 지원 가능한 DBMS 별 JDBC URL 예문은 다음과 같음
+#  jdbc:microsoft:sqlserver://<host>:<port,1433>;DatabaseName=<db>
+#  jdbc:sqlserver://<server>:<port>;databaseName=<db>
+#  jdbc:mysql://<host>:<port,3306>/<db>?useUnicode=true&characterEncoding=euc-kr&useSSL=false&allowPublicKeyRetrieval=true
+#  jdbc:oracle:thin:@<host>:<port,1521>:<db>
+#  jdbc:sybase:Tds:<host>:<port,5000>/<db>?charset=eucksc
+#  jdbc:Cache://<host>:<port,1972>/<db>
+#  jdbc:db2://<host>:<port,50000>/<db>
+#  jdbc:edb://<host>:<port,5444>/<db>
+#  jdbc:tibero:thin:@<host>:<port,8629>:<db>
+#  jdbc:postgresql://<host>:<port,5432>/<db>
+#  jdbc:cubrid:<host>:<port,33000>:<server>:<db>::
+#################################################
+```
+{% endtab %}
+
+{% tab title="MSSQL" %}
+```
+##################################################################################################
 DBNAME = MSSQL
 DBURL = jdbc:microsoft:sqlserver://<host>:<port,1433>;DatabaseName=<db>
 
@@ -56,67 +86,18 @@ DBURL = jdbc:oracle:thin:@<host>:<port,1521>:<db>
 DBUSER =
 DBPASS =
 #################################################
+
+#################################################
+# ORACLE 11G 이하를 사용하는 경우, Y로 변경
+USE_ORACLE_PREPARED_STATEMENT = N
+#################################################
 ```
 {% endtab %}
 {% endtabs %}
 
-*
+## Table Name Setting
 
-```php
-#################################################
-# 비즈클라이언트 설정 파일 (Configuration)
-# Ver 3.0.1.4
-# 구동시 JDK 1.8 이상 필요
-#################################################
-
-
-
-# (필수) 설정은 입력해주세요.
-
-#################################################
-# 비즈뿌리오 접속 정보 (필수)
-#################################################
-# 운영    : biz.ppurio.com
-# 검수    : biztest.ppurio.com (실발송 되지 않음)
-# SSL     : 18300/18400
-# NON-SSL : 15300/15400
-#################################################
-UDS_IP = biz.ppurio.com
-UDS_SEND_PORT = 18300
-UDS_RECV_PORT = 18400
-UDS_ID =
-UDS_PW =
-USE_SSL = Y
-#################################################
-
-#################################################
-# JDBC 연결 정보 (필수)
-#################################################
-# 지원 가능한 DBMS
-# MSSQL, MYSQL, ORACLE, SYBASE, CACHE, DB2, EDB, TIBERO, POSTGRES, CUBRID
-# Microsoft SQL Server 2008 이상 사용하는 경우 MSSQL2005 로 설정
-# 예) DBNAME = MYSQL
-#
-# 지원 가능한 DBMS 별 JDBC URL 예문은 다음과 같음
-#  jdbc:microsoft:sqlserver://<host>:<port,1433>;DatabaseName=<db>
-#  jdbc:sqlserver://<server>:<port>;databaseName=<db>
-#  jdbc:mysql://<host>:<port,3306>/<db>?useUnicode=true&characterEncoding=euc-kr&useSSL=false&allowPublicKeyRetrieval=true
-#  jdbc:oracle:thin:@<host>:<port,1521>:<db>
-#  jdbc:sybase:Tds:<host>:<port,5000>/<db>?charset=eucksc
-#  jdbc:Cache://<host>:<port,1972>/<db>
-#  jdbc:db2://<host>:<port,50000>/<db>
-#  jdbc:edb://<host>:<port,5444>/<db>
-#  jdbc:tibero:thin:@<host>:<port,8629>:<db>
-#  jdbc:postgresql://<host>:<port,5432>/<db>
-#  jdbc:cubrid:<host>:<port,33000>:<server>:<db>::
-#################################################
-DBNAME =
-
-DBURL =
-DBUSER =
-DBPASS =
-#################################################
-
+```
 #################################################
 # 메시지/로그테이블 (필수)
 #################################################
@@ -137,19 +118,11 @@ RCS_LOG_TABLE = BIZ_RCS_LOG
 ATTACHMENTS_TABLE = BIZ_ATTACHMENTS
 ATTACHMENTS_LOG_TABLE = BIZ_ATTACHMENTS_LOG
 #################################################
+```
 
-#################################################
-# 발송 가능한 메시지 타입
-# RCS 발송시 아래와 같이 설정
-# 예) MESSAGE_SUPPORT_TYPE = ALL
-#################################################
-MESSAGE_SUPPORT_TYPE = SMS|MMS|FAX|PHONE|AT|FT|BI|BW
-#################################################
+## Threading Option
 
-
-
-# 아래 설정은 옵션으로 필요에 따라 변경해주세요.
-
+```
 #################################################
 # FETCH THREAD
 # 전송 대상 1회 조회 건수
@@ -205,20 +178,11 @@ REPORT_SLEEP_SECONDS = 1
 REORDER_SLEEP_SECONDS = 1
 BACKUP_SLEEP_SECONDS = 10
 #################################################
+```
 
-#################################################
-# CONVERT CHARACTER SET
-# 캐릭터셋 컨버트 여부
-# (한글 깨짐 현상이 없을 경우 사용하지 않는다.)
-# CHARSET 예제
-#  EUC-KR(= KSC5601, MS949), UTF8,
-#  UTF16, 8859_1, LATIN1, ...
-#################################################
-CHARSET_CONV = N
-FROM_CHARSET = EUC-KR
-TO_CHARSET = EUC-KR
-#################################################
+## Blocking Option
 
+```
 #################################################
 # BLOCK TIME
 # 메시지를 전송하지 않을 시간 설정
@@ -288,24 +252,11 @@ BLOCK_TIME_FRIDAY =
 BLOCK_TIME_SATURDAY =
 #################################################
 
-#################################################
-# LOG_PATH : 로그파일경로
-# FILE_PATH : 첨부파일경로
-# BLK_PATH : 블랙리스트경로
-# REP_PATH : 리포트경로
-#################################################
-LOG_PATH = ./log
-FILE_PATH = ./spool
-BLK_PATH = ./blk
-REP_PATH = ./rep
-#################################################
+```
 
-#################################################
-# 첨부파일 자동삭제 옵션 (Y/N)
-#################################################
-FILE_DELETE_OPTION = Y
-#################################################
+## Backup Option
 
+```
 #################################################
 # BACKUP 옵션
 # 결과 리포트 수신 및 메시지 백업
@@ -326,6 +277,54 @@ BACKUP_WAIT_DAY = 0
 #################################################
 
 #################################################
+# 백업 수행시, 메시지 본문 길이만 보관여부 (Y/N)
+USE_BACKUP_PERSONAL_DATA_PROCESSING = N
+#################################################
+```
+
+## Others
+
+```php
+#################################################
+# 발송 가능한 메시지 타입
+# RCS 발송시 아래와 같이 설정
+# 예) MESSAGE_SUPPORT_TYPE = ALL
+#################################################
+MESSAGE_SUPPORT_TYPE = SMS|MMS|FAX|PHONE|AT|FT|BI|BW
+#################################################
+
+#################################################
+# CONVERT CHARACTER SET
+# 캐릭터셋 컨버트 여부
+# (한글 깨짐 현상이 없을 경우 사용하지 않는다.)
+# CHARSET 예제
+#  EUC-KR(= KSC5601, MS949), UTF8,
+#  UTF16, 8859_1, LATIN1, ...
+#################################################
+CHARSET_CONV = N
+FROM_CHARSET = EUC-KR
+TO_CHARSET = EUC-KR
+#################################################
+
+#################################################
+# LOG_PATH : 로그파일경로
+# FILE_PATH : 첨부파일경로
+# BLK_PATH : 블랙리스트경로
+# REP_PATH : 리포트경로
+#################################################
+LOG_PATH = ./log
+FILE_PATH = ./spool
+BLK_PATH = ./blk
+REP_PATH = ./rep
+#################################################
+
+#################################################
+# 첨부파일 자동삭제 옵션 (Y/N)
+#################################################
+FILE_DELETE_OPTION = Y
+#################################################
+
+#################################################
 # 리포트 재요청 사용여부 (Y/N)
 REPORT_RECONFIRM_OPTION = N
 REPORT_RECONFIRM_COUNT = 100
@@ -334,11 +333,6 @@ REPORT_RECONFIRM_COUNT = 100
 #################################################
 # 블랙리스트 사용여부 (Y/N)
 BLACKLIST_USE = N
-#################################################
-
-#################################################
-# ORACLE 10G 이하를 사용하는 경우, Y로 변경
-USE_ORACLE_PREPARED_STATEMENT = N
 #################################################
 
 #################################################
@@ -374,11 +368,6 @@ DB_DATA_DECRYPTION_PARAMETER_1 =
 
 # API 방식의 경우, 암호화 키
 DB_DATA_DECRYPTION_KEY =
-#################################################
-
-#################################################
-# 백업 수행시, 메시지 본문 길이만 보관여부 (Y/N)
-USE_BACKUP_PERSONAL_DATA_PROCESSING = N
 #################################################
 
 #################################################
