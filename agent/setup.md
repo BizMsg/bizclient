@@ -62,6 +62,17 @@ DBURL = jdbc:microsoft:sqlserver://<host>:<port,1433>;DatabaseName=<db>
 DBUSER =
 DBPASS =
 #################################################
+
+or
+
+#################################################
+DBNAME = MSSQL2005
+DBURL = jdbc:sqlserver://<server>:<port>;databaseName=<db>
+
+DBUSER =
+DBPASS =
+#################################################
+
 ```
 {% endtab %}
 
@@ -479,20 +490,13 @@ SEND_VALID_MINUTES = 180
 
 ```
 
-```python
-DBURL = jdbc:mysql://<DB 호스트 IP>:<DB 호스트 PORT>/<DB 이>?useUnicode=true&
-        characterEncoding=euc-kr&useSSL=false&allowPublicKeyRetrieval=true
-```
-
-RCS 발송을 활성화하기 위해선 아래와 같은 수정이 필요합니다.
+cf) RCS 발송을 활성화하기 위해선 아래와 같은 수정이 필요합니다.
 
 ```python
 MESSAGE_SUPPORT_TYPE = SMS|MMS|FAX|PHONE|AT|FT|BI|BW
 ->
 MESSAGE_SUPPORT_TYPE = ALL
 ```
-
-
 
 
 
