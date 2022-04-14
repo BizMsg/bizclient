@@ -1,6 +1,66 @@
 # Agent Configuration
 
-**uds.conf**
+### 설정파일(**uds.conf)**
+
+* 비즈뿌리오 접속 설정
+
+```
+#################################################
+# 운영    : biz.ppurio.com
+# 검수    : biztest.ppurio.com (실발송 되지 않음)
+# SSL     : 18300/18400
+# NON-SSL : 15300/15400
+#################################################
+UDS_IP = biz.ppurio.com
+UDS_SEND_PORT = 18300
+UDS_RECV_PORT = 18400
+UDS_ID =
+UDS_PW =
+USE_SSL = Y
+#################################################
+```
+
+* DBMS 접속 설정
+
+{% tabs %}
+{% tab title="MSSQL" %}
+```
+#################################################
+DBNAME = MSSQL
+DBURL = jdbc:microsoft:sqlserver://<host>:<port,1433>;DatabaseName=<db>
+
+DBUSER =
+DBPASS =
+#################################################
+```
+{% endtab %}
+
+{% tab title="MYSQL" %}
+```
+#################################################
+DBNAME = MYSQL
+DBURL = jdbc:mysql://<host>:<port,3306>/<db>?useUnicode=true&characterEncoding=euc-kr&useSSL=false&allowPublicKeyRetrieval=true
+
+DBUSER =
+DBPASS =
+#################################################
+```
+{% endtab %}
+
+{% tab title="Oracle" %}
+```
+#################################################
+DBNAME = ORACLE
+DBURL = jdbc:oracle:thin:@<host>:<port,1521>:<db>
+
+DBUSER =
+DBPASS =
+#################################################
+```
+{% endtab %}
+{% endtabs %}
+
+*
 
 ```php
 #################################################
