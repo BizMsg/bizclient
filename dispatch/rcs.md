@@ -109,6 +109,64 @@ VALUES (
       * [composeAction](../supplement.md#composeaction)
       * [clipboardAction](../supplement.md#clipboardaction)
 
+```json5
+{
+  "Buttons": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": {}
+              }
+            },
+            "dialerAction": {
+              "dialPhoneNumber": {
+                "phoneNumber": {}
+              }
+            },
+            "mapAction": {
+              "showLocation": {
+                "location": {
+                  "query": {},
+                  "latitude": {},
+                  "longitude": {},
+                  "label": {}
+                },
+                "fallbackUrl": {}
+              },
+              "requestLocationPush": {}
+            },
+            "calendarAction": {
+              "createCalendarEvent": {
+                "startTime": {},
+                "endTime": {},
+                "title": {},
+                "description": {}
+              }
+            },
+            "composeAction": {
+              "composeTextMessage": {
+                "phoneNumber": {},
+                "text": {}
+              }
+            },
+            "clipboardAction": {
+              "copyToClipboard": {
+                "text": {}
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
 
 
 **Action 예시**
