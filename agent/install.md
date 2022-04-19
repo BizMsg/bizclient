@@ -26,6 +26,8 @@
    _**``**_중지 : <mark style="color:orange;">service-stop.bat</mark> \ <mark style="color:orange;"></mark>삭제 <mark style="color:orange;"></mark> : <mark style="color:orange;">service-uninstall.bat</mark>\
 
 
+{% embed url="https://youtu.be/Svo3wc-fIoI" %}
+
 {% hint style="info" %}
 uds.conf 파일은 EUC-KR 로 인코딩 되어 있습니다.
 {% endhint %}
