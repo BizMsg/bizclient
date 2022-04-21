@@ -29,4 +29,3 @@
   * [FAX](result-code/fax.md)
 * [Supplement](supplement.md)
 * [Appendix](appendix.md)
-* [Document History](document-history.md)
