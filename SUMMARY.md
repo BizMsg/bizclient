@@ -22,7 +22,7 @@
 * [발송결과코드](result-code/README.md)
   * [공통](result-code/common.md)
   * [SMS](result-code/sms.md)
-  * [MMS (LMS)](result-code/mms-lms.md)
+  * [MMS/LMS](result-code/mms-lms.md)
   * [카카오 비즈 메시지](result-code/kakao-biz.md)
   * [RCS](result-code/rcs.md)
   * [PHONE](result-code/phone.md)
