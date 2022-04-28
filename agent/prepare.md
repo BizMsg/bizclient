@@ -18,16 +18,13 @@ description: 비즈클라이언트를 사용하기 위한 서버 요구사항
 
 #### 지원 가능 DBMS
 
-* MySQL
-* ORACLE
-* MSSQL
-* SYBASE
-* CACHE
-* DB2
-* DB2 AS400
-* CUBRID
-* EDB
-* POSTGRESQL
+|        |        |            |
+| :----: | :----: | :--------: |
+|  MySQL | ORACLE |    MSSQL   |
+| SYBASE |  CACHE | DB2(AS400) |
+| CUBRID |   EDB  | POSTGRESQL |
+
+
 
 {% hint style="info" %}
 Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 설정이 필요
@@ -48,8 +45,6 @@ _경로 : **{모듈위치}/lib/jdbc/{해당 JDBC 드라이버}.jar**_\
 
 * 운영 : biz.ppurio.com 18300/18400 (Outbound)
 * 테스트 : biztest.ppurio.com 18300/18400 (Outbound)
-
-
 
 ### 계정 중복 여부 확인
 
