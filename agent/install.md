@@ -11,6 +11,8 @@
 4. 비즈클라이언트를 중지합니다.\
    _**`{모듈경로}/script`**_\*\* → `./biz_stop`\*\*
 
+{% embed url="https://youtu.be/kAG-_nNXty8" %}
+
 ## Windows 계열
 
 1. 비즈클라이언트를 서버에 업로드 한 뒤 압축 해제합니다. **`unzip biz_client_v3xxx.zip`**
