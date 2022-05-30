@@ -24,7 +24,7 @@ USE_SSL = Y
 #################################################
 ```
 
-## DBMS Connect (JDBC Setting) &#x20;
+## DBMS Connect (JDBC Setting)
 
 {% tabs %}
 {% tab title="JDBC URL" %}
@@ -72,7 +72,6 @@ DBURL = jdbc:sqlserver://<server>:<port>;databaseName=<db>
 DBUSER =
 DBPASS =
 #################################################
-
 ```
 {% endtab %}
 
@@ -217,7 +216,7 @@ ATTACHMENTS_LOG_TABLE = BIZ_ATTACHMENTS_LOG
 #################################################
 ```
 
-## Threading Option
+## Thread Option
 
 ```
 #################################################
@@ -277,7 +276,7 @@ BACKUP_SLEEP_SECONDS = 10
 #################################################
 ```
 
-## Blocking Option
+## Block Option
 
 ```
 #################################################
@@ -348,7 +347,6 @@ BLOCK_TIME_THURSDAY =
 BLOCK_TIME_FRIDAY =
 BLOCK_TIME_SATURDAY =
 #################################################
-
 ```
 
 ## Backup Option
@@ -487,7 +485,6 @@ ABSOLUTE_PATH_OPTION = N
 # 1 ~ 1440 : 재구동 시점 기준 1~1440분 지난 미발송 메시지 실패처리
 SEND_VALID_MINUTES = 180
 #################################################
-
 ```
 
 cf) RCS 발송을 활성화하기 위해선 아래와 같은 수정이 필요합니다.
@@ -498,10 +495,7 @@ MESSAGE_SUPPORT_TYPE = SMS|MMS|FAX|PHONE|AT|FT|BI|BW
 MESSAGE_SUPPORT_TYPE = ALL
 ```
 
-
-
 > 클라이언트 실행 후에는 **uds.confx** 로 파일명이 변경됨
 >
 > * 비즈뿌리오 비밀번호나 DB 비밀번호를 수정해야 할 때 .**confx** **->** .**conf**로 변경한 뒤 수정
 > * 암호화 된 비밀번호 삭제 후 재 작성
-
