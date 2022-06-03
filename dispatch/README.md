@@ -41,11 +41,40 @@ STATUS는 다음과 같은 상태 변화를 가집니다.
 
 ### 참고
 
-> 2개 이상의 파일을 전송할 때는 **ATTACHED\_FILE** 필드에 파일 1\*\*|**파일 2**|\*\* ... 형식으로 파일을 **|**(파이프라인) 으로\
-> 구분하여 입력합니다 (SMS 제외)&#x20;
+> 2개 이상의 파일을 전송할 때는 **ATTACHED\_FILE** 필드에 파일 1\*\*|**파일 2**|\*\* ... 형식으로 파일을 **|**(파이프라인) 으로 구분하여 입력합니다 (SMS 제외)&#x20;
 
-> 메시지 타입 별 첨부파일을 발송해야 하는 경우 [\***지원 가능한 첨부파일 타입**](../supplement.md#undefined)을 참조해주시길 바랍니다
+> 메시지 타입 별 첨부파일을 발송해야 하는 경우 아래 **지원 가능한 첨부파일 타입**을 참조해주시길 바랍니다.
 
 {% hint style="info" %}
 이 후 발송 타입별 샘플 Query는 MySQL 기준으로 작성되었습니다
 {% endhint %}
+
+
+
+### 지원 가능한 첨부파일 타입
+
+{% tabs %}
+{% tab title="MMS" %}
+Image : jpg
+
+Audio : ma3
+
+Video : k3g
+
+_Image 를 제외한 타입에 대해서는, 전송은 되지만 일부 이동통신사 또는 단말기에 대해 지원하지 않을 수 있습니다._
+{% endtab %}
+
+{% tab title="AT/FT" %}
+Button/Image : JSON
+{% endtab %}
+
+{% tab title="PHONE" %}
+Voice : wav (8bit-8KHz mono 형식)
+{% endtab %}
+
+{% tab title="FAX" %}
+Docs : doc, docx, xls, xlsx, ppt, pptx, hwp, pdf, txt, html, html
+
+Image : bmp, gif, jpg, png
+{% endtab %}
+{% endtabs %}

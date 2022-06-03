@@ -27,5 +27,4 @@
   * [RCS](result-code/rcs.md)
   * [PHONE](result-code/phone.md)
   * [FAX](result-code/fax.md)
-* [Supplement](supplement.md)
 * [Appendix](appendix.md)
