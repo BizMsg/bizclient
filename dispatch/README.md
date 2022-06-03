@@ -47,5 +47,5 @@ STATUS는 다음과 같은 상태 변화를 가집니다.
 > 메시지 타입 별 첨부파일을 발송해야 하는 경우 [\***지원 가능한 첨부파일 타입**](../supplement.md#undefined)을 참조해주시길 바랍니다
 
 {% hint style="info" %}
-MySQL 기준으로 작성되었습니다
+이 후 발송 타입별 샘플 Query는 MySQL 기준으로 작성되었습니다
 {% endhint %}
