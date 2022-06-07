@@ -15,9 +15,29 @@ VALUES (
 8, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234', {RCS_REFKEY})
 ```
 
-***
+### RCS 공통포맷 (MESSAGEBASE\_ID)
 
-**BODY**
+| MESSAGEBASE\_ID |  상품 |        메시지 타입        | 카드 장 수 | 최대 버튼 수 | 메시지 최대 본문 길이 (글자수) |
+| :-------------: | :-: | :------------------: | :----: | :-----: | :----------------: |
+|     SS000000    | SMS |      Standalone      |    1   |    1    |         100        |
+|     SL000000    | LMS |      Standalone      |    1   |    3    |        1300        |
+|     SMwThT00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
+|     SMwThM00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
+|    CMwMhM0300   | MMS |    Carousel Medium   |    3   |    2    |     1300 (총 합)     |
+|    CMwMhM0400   | MMS |    Carousel Medium   |    4   |    2    |     1300 (총 합)     |
+|    CMwMhM0500   | MMS |    Carousel Medium   |    5   |    2    |     1300 (총 합)     |
+|    CMwMhM0600   | MMS |    Carousel Medium   |    6   |    2    |     1300 (총 합)     |
+|    CMwShS0300   | MMS |    Carousel Small    |    3   |    2    |     1300 (총 합)     |
+|    CMwShS0400   | MMS |    Carousel Small    |    4   |    2    |     1300 (총 합)     |
+|    CMwShS0500   | MMS |    Carousel Small    |    5   |    2    |     1300 (총 합)     |
+|    CMwShS0600   | MMS |    Carousel Small    |    6   |    2    |     1300 (총 합)     |
+
+> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나\
+> 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
+
+> 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
+
+### RCS BODY
 
 **key : title, media, description**
 
@@ -47,29 +67,37 @@ VALUES (
 }
 ```
 
-URL 예시 – maapfile://BR.i6dOpSm8N8.20200302150000.001
+**media 종류**
 
-### RCS 공통포맷 (MESSAGEBASE\_ID)
+**1. 이미지**&#x20;
 
-| MESSAGEBASE\_ID |  상품 |        메시지 타입        | 카드 장 수 | 최대 버튼 수 | 메시지 최대 본문 길이 (글자수) |
-| :-------------: | :-: | :------------------: | :----: | :-----: | :----------------: |
-|     SS000000    | SMS |      Standalone      |    1   |    1    |         100        |
-|     SL000000    | LMS |      Standalone      |    1   |    3    |        1300        |
-|     SMwThT00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
-|     SMwThM00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
-|    CMwMhM0300   | MMS |    Carousel Medium   |    3   |    2    |     1300 (총 합)     |
-|    CMwMhM0400   | MMS |    Carousel Medium   |    4   |    2    |     1300 (총 합)     |
-|    CMwMhM0500   | MMS |    Carousel Medium   |    5   |    2    |     1300 (총 합)     |
-|    CMwMhM0600   | MMS |    Carousel Medium   |    6   |    2    |     1300 (총 합)     |
-|    CMwShS0300   | MMS |    Carousel Small    |    3   |    2    |     1300 (총 합)     |
-|    CMwShS0400   | MMS |    Carousel Small    |    4   |    2    |     1300 (총 합)     |
-|    CMwShS0500   | MMS |    Carousel Small    |    5   |    2    |     1300 (총 합)     |
-|    CMwShS0600   | MMS |    Carousel Small    |    6   |    2    |     1300 (총 합)     |
+* 비즈뿌리오 사이트 \[메시지관리] - \[RCS 관리] - \[RCS 이미지 관리] 에서 이미지를 등록하여 사용합니다
 
-> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나\
-> 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
+{% hint style="info" %}
+**URL 예시 ( maapfile://{fileId} )**
 
-> 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
+"media":"maapfile://BR.i6dOpSm8N8.20200302150000.001"
+{% endhint %}
+
+#### 2. 동영상 스트리밍&#x20;
+
+* 3가지 형태의 YouTube URL 주소 지원 (정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
+*   동영상 썸네일은 등록된 이미지만 사용 가능하며 YouTube URL 뒤에 콤마(,)와 함께 입력
+
+    (콤마(,) 외 공백을 포함하는 경우 실패)
+* 동영상 발송 시 Footer에 '동영상 재생 시 데이터 요금제가 적용됩니다.'라는 문구 자동 삽입
+
+{% hint style="info" %}
+**URL 예시 ( https://youtu.be/\[VideoId],maapfile://{썸네일용 fileId} )**
+
+"media1":"https://www.youtube.com/watch?v=\[videoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
+
+"media2":"https://youtu.be/\[VideoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
+
+"media3":"https://m.youtube.com/watch?v=\[videoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
+
+****
+{% endhint %}
 
 ### RCS + BUTTONS
 
