@@ -32,8 +32,9 @@ VALUES (
 |    CMwShS0500   | MMS |    Carousel Small    |    5   |    2    |     1300 (총 합)     |
 |    CMwShS0600   | MMS |    Carousel Small    |    6   |    2    |     1300 (총 합)     |
 
-> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300 자까지 발송 가능하나\
-> 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 가능성이 존재합니다.
+> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.
+>
+> 수신 가능한 글자 수는 포토여부/타이틀 글자 수/버튼 개수에 따라 다릅니다.
 
 > 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
 
@@ -69,7 +70,7 @@ VALUES (
 
 **media 종류**
 
-**1. 이미지**&#x20;
+**1. 이미지**
 
 * 비즈뿌리오 사이트 \[메시지관리] - \[RCS 관리] - \[RCS 이미지 관리] 에서 이미지를 등록하여 사용합니다
 
@@ -79,7 +80,7 @@ VALUES (
 "media":"maapfile://BR.i6dOpSm8N8.20200302150000.001"
 {% endhint %}
 
-#### 2. 동영상 스트리밍&#x20;
+#### 2. 동영상 스트리밍
 
 * 3가지 형태의 YouTube URL 주소 지원 (정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
 *   동영상 썸네일은 등록된 이미지만 사용 가능하며 YouTube URL 뒤에 콤마(,)와 함께 입력
@@ -96,7 +97,7 @@ VALUES (
 
 "media3":"https://m.youtube.com/watch?v=\[videoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
-****
+***
 {% endhint %}
 
 ### RCS + BUTTONS
@@ -113,17 +114,17 @@ VALUES (
 
 #### 버튼 구조 (JSON)
 
-* [BUTTONS](broken-reference)
-  * [suggestions](broken-reference)
-    * [postback](broken-reference)
-    * [action](broken-reference)
-      * [urlAction](broken-reference)
-      * [dialerAction](broken-reference)
-      * [mapAction](broken-reference)
-      * [mapAction](broken-reference)
-      * [calendarAction](broken-reference)
-      * [composeAction](broken-reference)
-      * [clipboardAction](broken-reference)
+* [BUTTONS](broken-reference/)
+  * [suggestions](broken-reference/)
+    * [postback](broken-reference/)
+    * [action](broken-reference/)
+      * [urlAction](broken-reference/)
+      * [dialerAction](broken-reference/)
+      * [mapAction](broken-reference/)
+      * [mapAction](broken-reference/)
+      * [calendarAction](broken-reference/)
+      * [composeAction](broken-reference/)
+      * [clipboardAction](broken-reference/)
 
 ```json5
 {
