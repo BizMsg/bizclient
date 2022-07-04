@@ -35,4 +35,4 @@ description: 비즈클라이언트 (BizClient)
 
 
 
-변경사항 바로가기
+[변경사항 바로가기](https://github.com/BizMsg/bizclient/commit/c9ca587a888c083af2b315cf0b2b787100ed9b88)
