@@ -24,8 +24,6 @@ description: 비즈클라이언트를 사용하기 위한 서버 요구사항
 | SYBASE |  CACHE | DB2(AS400) |
 | CUBRID |   EDB  | POSTGRESQL |
 
-
-
 {% hint style="info" %}
 Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 설정이 필요
 {% endhint %}
@@ -55,3 +53,5 @@ _경로 : **{모듈위치}/lib/jdbc/{해당 JDBC 드라이버}.jar**_\
 {% hint style="info" %}
 한 계정을 여러 클라이언트 모듈에 세팅할 경우 리포트가 분산되어 정상적으로 반영되지 않을 수 있습니다.
 {% endhint %}
+
+testline2
