@@ -11,7 +11,7 @@
 
 ***
 
-* [메시지 전송](dispatch/README.md)
+* [메시지 발송](dispatch/README.md)
   * [SMS](dispatch/sms.md)
   * [MMS/LMS](dispatch/mms-lms.md)
   * [카카오 비즈 메시지](dispatch/kakao-biz.md)

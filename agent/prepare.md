@@ -24,6 +24,8 @@ description: 비즈클라이언트를 사용하기 위한 서버 요구사항
 | SYBASE |  CACHE | DB2(AS400) |
 | CUBRID |   EDB  | POSTGRESQL |
 
+
+
 {% hint style="info" %}
 Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 설정이 필요
 {% endhint %}

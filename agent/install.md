@@ -21,11 +21,11 @@
    2. DBMS 연결 정보 설정 **(옵션: DBNAME, DBURL, DBUSER, DBPASS)**
 3. 비즈클라이언트를 설치/시작합니다. _**`{모듈경로}/bat`**_\
    설치 : <mark style="color:orange;">service-install.bat 실행 (관리자권한)</mark>\
-   cf) 비즈클라이언트 등록 확인 :\
-   제어판 → 관리도구 → 서비스 (Daoutech BizClient 서비스를 통하여 직접 시작/종료 가능)\
+   &#x20;cf) 비즈클라이언트 등록 확인 :\
+   &#x20;       제어판 → 관리도구 → 서비스 (Daoutech BizClient 서비스를 통하여 직접 시작/종료 가능)\
    시작 : service-start.bat 실행
 4. 비즈클라이언트를 중지합니다. _**`{모듈경로}/bat`**_\
-   중지 : <mark style="color:orange;">service-stop.bat</mark>\ 서비스 삭제 : <mark style="color:orange;">service-uninstall.bat</mark>
+   중지 : <mark style="color:orange;">service-stop.bat</mark>\ <mark style="color:orange;"></mark>서비스 삭제 : <mark style="color:orange;">service-uninstall.bat</mark>
 
 {% embed url="https://youtu.be/D_HFawjw68c" %}
 
