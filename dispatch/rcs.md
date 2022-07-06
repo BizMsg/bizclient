@@ -114,18 +114,6 @@ VALUES (
 
 #### 버튼 구조 (JSON)
 
-* [BUTTONS](broken-reference/)
-  * [suggestions](broken-reference/)
-    * [postback](broken-reference/)
-    * [action](broken-reference/)
-      * [urlAction](broken-reference/)
-      * [dialerAction](broken-reference/)
-      * [mapAction](broken-reference/)
-      * [mapAction](broken-reference/)
-      * [calendarAction](broken-reference/)
-      * [composeAction](broken-reference/)
-      * [clipboardAction](broken-reference/)
-
 ```json5
 {
   "Buttons": [
