@@ -201,89 +201,21 @@ VALUES (7, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
 
 Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
-|        키        |        키        |      키      |    타입    |  필수 | 설명                                                                                                                                     |
-| :-------------: | :-------------: | :---------: | :------: | :-: | -------------------------------------------------------------------------------------------------------------------------------------- |
-|      button     |                 |             |   array  |  -  | 버튼 목록                                                                                                                                  |
-|                 |       name      |             | text(14) |  Y  | <p>버튼 제목</p><p><strong>‘AC’ 타입인 경우 ‘채널 추가’로 고정</strong></p>                                                                            |
-|                 |       type      |             |  text(2) |  Y  | <p>버튼타입<br><strong>아래 타입 별 속성 표 참조</strong></p>                                                                                        |
-|                 |     url\_pc     |             |   text   |  -  | PC 환경에서 버튼 클릭 시 이동할 URL                                                                                                                |
-|                 |   url\_mobile   |             |   text   |  -  | Mobile 환경에서 버튼 클릭 시 이동할 URL                                                                                                            |
-|                 |   scheme\_ios   |             |   text   |  -  | Mobile Ios 환경에서 버튼 클릭 시 실행할 Application Custom Scheme                                                                                  |
-|                 | scheme\_android |             |   text   |  -  | Mobile Android 환경에서 버튼 클릭 시 실행할 Application Custom Scheme                                                                              |
-|                 |   chat\_extra   |             | text(50) |  -  | 상담톡/봇 전환 시 전달할 메타정보                                                                                                                    |
-|                 |   chat\_event   |             | text(50) |  -  | 봇 전환 시 연결할 봇 이벤트명                                                                                                                      |
-|                 |    plugin\_id   |             | text(24) |  -  | 플러그인 ID                                                                                                                                |
-|                 |    relay\_id    |             |   text   |  -  | 플러그인 실행시 X-Kakao-Plugin-Relay-Id 헤더를 통해 전달 받을 값                                                                                        |
-|                 |   oneclick\_id  |             |   text   |  -  | 원클릭 결제 플러그인에서 사용하는 결제 정보                                                                                                               |
-|                 |   product\_id   |             |   text   |  -  | 원클릭 결제 플러그인에서 사용하는 결제 정보                                                                                                               |
-|      image      |                 |             |   json   |  N  | 친구톡 이미지                                                                                                                                |
-|                 |     Img\_url    |             |   text   |  Y  | <p>노출할 이미지<br><strong>친구톡 이미지(와이드) 발송 시 필수입력</strong></p>                                                                              |
-|                 |    Img\_link    |             |   text   |  N  | <p>이미지 클릭시 이동할 url</p><p>미설정시 카카오톡 내 이미지 뷰어 사용</p>                                                                                     |
-| item\_highlight |                 |             |   json   |  N  | 아이템 하이라이트                                                                                                                              |
-|                 |      title      |             | text(30) |  Y  | 타이틀 (이미지가 있는 경우 최대 21자)                                                                                                                |
-|                 |   description   |             | text(19) |  Y  | 부가정보 (이미지가 있는 경우 최대 14자)                                                                                                               |
-|       item      |                 |             |   json   |  N  | 아이템리스트와 아이템 요약정보                                                                                                                       |
-|                 |       list      |             |   array  |  Y  | 아이템리스트                                                                                                                                 |
-|                 |                 |    title    |  text(6) |  Y  | 타이틀                                                                                                                                    |
-|                 |                 | description | text(23) |  Y  | 부가정보                                                                                                                                   |
-|                 |     summary     |             |   json   |  N  | 아이템 요약정보                                                                                                                               |
-|                 |                 |    title    |  text(6) |  Y  | 타이틀                                                                                                                                    |
-|                 |                 | description | text(14) |  Y  | <p>가격정보</p><p><em>허용되는 문자: 통화기호</em><br><em>(유니코드 통화기호, 元, 円, 원), 통화코드(ISO 4217), 숫자, 콤마, 소수점, 공백</em></p><p><em>소수점 2자리까지 허용</em></p> |
-|      extra      |                 |             |   json   |  -  | 추가 기능                                                                                                                                  |
-|                 |    msg\_type    |             |   text   |     | <p>카카오 발송 유형</p><p><strong>알림톡 이미지 발송 시 필수입력</strong></p>                                                                              |
-|                 |      title      |             | text(50) |     | 템플릿 내용 중 강조 표기할 핵심 정보                                                                                                                  |
-|                 |    supplement   |             |   json   |     | <p>메시지에 첨부할 바로연결</p><p><strong>supplement 참조</strong></p>                                                                              |
-|                 |      price      |             |  number  |     | <p>모먼트 광고 전환 최적화 전용<br>메시지 내 포함된 가격/금액/결제금액</p>                                                                                        |
-|                 |  currency\_type |             |  text(3) |     | <p>모먼트 광고 전환 최적화 전용<br>메시지 내 포함된 가격/금액/결제금액의 통화단위 KRW, USD, EUR 등 국제 통화 코드 사용</p>                                                      |
-|                 |      header     |             | text(16) |     | 메시지 상단에 표기할 제목                                                                                                                         |
+![](<../.gitbook/assets/image (8).png>)
 
 **supplement**
 
-|       키      |        키        |    타입    |  필수 |                                 설명                                |
-| :----------: | :-------------: | :------: | :-: | :---------------------------------------------------------------: |
-| quick\_reply |       name      | text(14) |  Y  |                              바로연결 제목                              |
-|      ''      |       type      |  text(2) |  Y  |                              바로연결 타입                              |
-|      ''      | scheme\_android |   text   |     |    mobile android 환경에서 바로연결 클릭 시 실행할 application custom scheme    |
-|      ''      |   scheme\_ios   |   text   |     | <p>mobile ios 환경에서 바로연결 클릭 시 실행할<br>application custom scheme</p> |
-|      ''      |   url\_mobile   |   text   |     |                   mobile 환경에서 바로연결 클릭 시 이동할 url                   |
-|      ''      |     url\_pc     |   text   |     |                      pc 환경에서 버튼 클릭 시 이동할 url                      |
-|      ''      |   chat\_extra   | text(50) |     |                        상담톡/봇 전환 시 전달할 메타정보                        |
-|      ''      |   chat\_event   | text(50) |     |                         봇 전환 시 연결할 봇 이벤트명                         |
+![](<../.gitbook/assets/image (6).png>)
 
 ### **AT/FT + BUTTON**
 
 **버튼 타입**
 
-|   타입   | 기능                                                                                                                                     |
-| :----: | -------------------------------------------------------------------------------------------------------------------------------------- |
-|  배송조회  | <ul><li>메시지 내용에 택배사명과 송장 번호를 파싱하여 카카오 검색 배송조회 페이지로<br>이동하는 버튼을 자동으로 생성함</li></ul>                                                      |
-|  웹 링크  | <ul><li>버튼 클릭 시 인앱 브라우저에서 웹 페이지 실행</li><li><p>Mobile / PC에서 실행할 URL을 각각 설정 가능</p><p>*현재 알림톡은 PC 에서 메시지 내용이 보이지 않음<br></p></li></ul>    |
-|  앱 링크  | <ul><li>버튼 클릭 시 앱 Custom Scheme 실행</li><li>Android /Ios 에서 실행할 Custom Scheme 각각 설정 필수</li></ul>                                        |
-|  봇 키워드 | <ul><li>버튼 클릭 시 유저로부터 '<strong>버튼 명</strong>'이 텍스트로 들어간 챗버블이 발송됨</li><li>봇 또는 상담원에게 유저의 액션을 전달할 때 사용할 수 있음</li></ul>                   |
-| 메시지 전달 | <ul><li>버튼 클릭 시 유저로부터 '<strong>버튼 명+메시지 본문</strong>'이 텍스트로 들어간 챗버블이 발송됨</li><li>봇 또는 상담원에게 유저가 수신한 알림톡과 함께 유저의 액션을 전달할 경우 사용</li></ul> |
-|  채널 추가 | <ul><li>카카오톡 채널 추가 버튼 활성화</li></ul>                                                                                                    |
-| 상담톡 전환 | <ul><li>버튼 클릭 시 상담톡으로 전환</li><li>상담톡을 이용하는 카카오톡 채널만 이용 가능</li></ul>                                                                    |
-|  봇 전환  | <ul><li>상담톡을 이용하는 카카오톡 채널만 이용 가능</li><li>카카오 I 오픈빌더의 챗봇을 사용하는 카카오톡 채널만 이용 가능</li></ul>                                                 |
-|   플러그  | <ul><li>버튼 클릭 시 플러그인 제공</li><li>이미지 보안 전송 플러그인, 개인 정보 이용 플러그인, 원클릭 결제 플러그인</li></ul>                                                   |
+![](<../.gitbook/assets/image (4).png>)
 
 #### AT/FT + 버튼 타입별 속성
 
-|  타입 |        속성       |  타입  |  필수 | 설명                                                                 |
-| :-: | :-------------: | :--: | :-: | ------------------------------------------------------------------ |
-|  WL |   url\_mobile   | text |  Y  | 버튼 클릭 시 이동할 pc/mobile환경별 Web URL                                   |
-|  WL |     url\_pc     | text |  N  | 버튼 클릭 시 이동할 pc/mobile환경별 Web URL                                   |
-|  AL |   scheme\_ios   | text |  Y  | 버튼 클릭 시 실행할 OS 별 Application Custom Scheme                         |
-|  AL | scheme\_android | text |  Y  | 버튼 클릭 시 실행할 OS 별 Application Custom Scheme                         |
-|  DS |        -        |   -  |  -  | 버튼 클릭 시 배송조회 페이지로 이동                                               |
-|  BK |        -        |   -  |  -  | 해당 버튼 텍스트 전송                                                       |
-|  MD |        -        |   -  |  -  | 해당 버튼 텍스트+메시지본문 전송                                                 |
-|  AC |        -        |   -  |  -  | 버튼 클릭 시 카카오톡 채널 추가                                                 |
-|  BC |   chat\_extra   | text |  N  | 상담톡 전환 시 전달할 메타정보                                                  |
-|  BT |   chat\_extra   | text |  N  | 봇 전환 시 전달할 메타정보                                                    |
-|  BT |   chat\_event   | text |  N  | 봇 전환 시 연결할 봇 이벤트명                                                  |
-|  P1 |        -        |   -  |  -  | 이미지 보안 전송 플러그인                                                     |
-|  P2 |        -        |   -  |  -  | 개인정보이용 플러그인                                                        |
-|  P3 |        -        |   -  |  -  | <p>원클릭 결제 플러그인<br>(발송시 oneclick_id 또는 product_id 를 필수로 전달해아 함)</p> |
+![](<../.gitbook/assets/image (9).png>)
 
 #### 버튼 첨부파일 예시
 
@@ -313,34 +245,18 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 ***
 
-***
-
 ### **AT + 바로연결**
-
-***
 
 알림톡 바로연결이란?
 
 * 알림톡 하단에 가로 슬라이드 형태로 표시되며 웹/앱 연결, 상담톡 전환 등을 호출하는 기능
 * 상담톡 또는 챗봇을 사용하는 발신프로필만 이용 가능
 * 바로연결은 최대 10개까지 사용 가능, 사용 시 버튼 개수는 2개로 제한\
-  \*\*\*\*(챗봇, 상담톡 사용 채널에만 한해 사용 가능합니다.)
+  \*(챗봇, 상담톡 사용 채널에만 한해 사용 가능합니다.)
 
 #### AT + 바로연결 타입별 속성
 
-|  타입 |        속성       |  타입  |  필수 | 설명                                           |
-| :-: | :-------------: | :--: | :-: | -------------------------------------------- |
-|  WL |   url\_mobile   | text |  Y  | 바로연결 클릭 시 이동할 pc/mobile 환경별 web url          |
-|  WL |     url\_pc     | text |  N  | 바로연결 클릭 시 이동할 pc/mobile 환경별 web url          |
-|  AL |   scheme\_ios   | text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
-|  AL | scheme\_android | text |  -  | 바로연결 클릭 시 실행할 OS 별 Application Custom Scheme |
-|  AL |   url\_mobile   | text |  -  | mobile 환경에서 바로연결 클릭 시 이동할 url                |
-|  AL |     url\_pc     | text |  N  | pc 환경에서 바로연결 클릭 시 이동할 url                    |
-|  BK |        -        |   -  |  -  | 해당 바로연결 텍스트 전송                               |
-|  MD |        -        |   -  |  -  | 해당 바로연결 텍스트+메시지 본문 전송                        |
-|  BC |   chat\_extra   | text |  N  | 상담톡 전환 시 전달할 메타정보                            |
-|  BT |   chat\_extra   | text |  N  | 봇 전환 시 전달할 메타정보                              |
-|  BT |   chat\_event   | text |  N  | 봇 전환 시 연결할 봇 이벤트명                            |
+![](../.gitbook/assets/image.png)
 
 **바로연결 첨부파일 예시**
 
@@ -488,11 +404,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 **파라미터**
 
-|   키   |     키     |  타입  |  필수 |             설명            |
-| :---: | :-------: | :--: | :-: | :-----------------------: |
-| image |  img\_url | text |  Y  |           버튼 제목           |
-| image | img\_link | text |  N  |      이미지 클릭 시 이동할 URL     |
-| extra |    wide   | text |  N  | 와이드 버블 사용 여부 (Y/N, 기본값 N) |
+![](<../.gitbook/assets/image (7).png>)
 
 친구톡 + 이미지 타입 첨부파일의 실제 내용은 다음과 같이 JSON 형태로 구성됩니다.
 
