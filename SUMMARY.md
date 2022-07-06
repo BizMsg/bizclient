@@ -28,4 +28,4 @@
   * [PHONE](result-code/phone.md)
   * [FAX](result-code/fax.md)
 * [Appendix](appendix.md)
-* [Page 1](page-1.md)
+* [개정 이력](undefined.md)

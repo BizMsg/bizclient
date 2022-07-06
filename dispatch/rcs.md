@@ -17,20 +17,7 @@ VALUES (
 
 ### RCS 공통포맷 (MESSAGEBASE\_ID)
 
-| MESSAGEBASE\_ID |  상품 |        메시지 타입        | 카드 장 수 | 최대 버튼 수 | 메시지 최대 본문 길이 (글자수) |
-| :-------------: | :-: | :------------------: | :----: | :-----: | :----------------: |
-|     SS000000    | SMS |      Standalone      |    1   |    1    |         100        |
-|     SL000000    | LMS |      Standalone      |    1   |    3    |        1300        |
-|     SMwThT00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
-|     SMwThM00    | MMS | Standalone Media Top |    1   |    2    |        1300        |
-|    CMwMhM0300   | MMS |    Carousel Medium   |    3   |    2    |     1300 (총 합)     |
-|    CMwMhM0400   | MMS |    Carousel Medium   |    4   |    2    |     1300 (총 합)     |
-|    CMwMhM0500   | MMS |    Carousel Medium   |    5   |    2    |     1300 (총 합)     |
-|    CMwMhM0600   | MMS |    Carousel Medium   |    6   |    2    |     1300 (총 합)     |
-|    CMwShS0300   | MMS |    Carousel Small    |    3   |    2    |     1300 (총 합)     |
-|    CMwShS0400   | MMS |    Carousel Small    |    4   |    2    |     1300 (총 합)     |
-|    CMwShS0500   | MMS |    Carousel Small    |    5   |    2    |     1300 (총 합)     |
-|    CMwShS0600   | MMS |    Carousel Small    |    6   |    2    |     1300 (총 합)     |
+![](<../.gitbook/assets/image (1).png>)
 
 > RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.
 >
@@ -113,18 +100,6 @@ VALUES (
 ```
 
 #### 버튼 구조 (JSON)
-
-* [BUTTONS](broken-reference/)
-  * [suggestions](broken-reference/)
-    * [postback](broken-reference/)
-    * [action](broken-reference/)
-      * [urlAction](broken-reference/)
-      * [dialerAction](broken-reference/)
-      * [mapAction](broken-reference/)
-      * [mapAction](broken-reference/)
-      * [calendarAction](broken-reference/)
-      * [composeAction](broken-reference/)
-      * [clipboardAction](broken-reference/)
 
 ```json5
 {
