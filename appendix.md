@@ -119,8 +119,6 @@ VALUES (
 
 **BIZ\_ATTACHMENTS TABLE**
 
-![](<.gitbook/assets/image (2) (1).png>)
-
 | MSG\_KEY | SEQ | TYPE |                                 CONTENTS                                 |
 | :------: | :-: | :--: | :----------------------------------------------------------------------: |
 |  msgKey1 |  1  | FILE |                              **{첨부파일명.jpg}**                             |
@@ -128,8 +126,6 @@ VALUES (
 |  msgKey1 |  3  | JSON |                           아래 **msgKey JSON** 참고                          |
 
 **msgKey JSON**
-
-
 
 ```json5
 {
