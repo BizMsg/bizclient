@@ -2,7 +2,7 @@
 description: 알림톡/친구톡
 ---
 
-# 카카오 비즈 메시지
+# 카카오톡 비즈메시지
 
 ### AT 발송
 
@@ -215,7 +215,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 #### AT/FT + 버튼 타입별 속성
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 #### 버튼 첨부파일 예시
 
@@ -404,7 +404,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 **파라미터**
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (9).png>)
 
 친구톡 + 이미지 타입 첨부파일의 실제 내용은 다음과 같이 JSON 형태로 구성됩니다.
 
