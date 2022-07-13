@@ -111,14 +111,6 @@ VALUES (
 >
 > "media" : "maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
-
-
-{% hint style="info" %}
-**URL 예시 ( maapfile://{fileId} )**
-
-"media":"maapfile://BR.i6dOpSm8N8.20200302150000.001"
-{% endhint %}
-
 #### 2. 동영상 스트리밍
 
 * 3가지 형태의 YouTube URL 주소 지원 (정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
