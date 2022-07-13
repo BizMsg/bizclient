@@ -25,9 +25,49 @@ VALUES (
 
 > 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
 
-### RCS BODY
+> **\*글자수 및 라인수 정의**
+>
+> 글자 수 : 1줄 당 정상적으로 표현가능한 글자 수, 한글 **'**가' 기준 측정
+>
+> 줄(라인) 수 : expand 없이 메시지 버블 최대크기에서 표현 가능한 description 줄 수&#x20;
 
-**key : title, media, description**
+**아래는 MMS 항목에 대한 글자수를 나타낸 표입니다.**
+
+**MMS (Standalone Media Top – 세로형)**
+
+![](<../.gitbook/assets/image (6).png>)
+
+\[줄 수 (Media Tall인 경우, 접혀있는 경우)]
+
+![](<../.gitbook/assets/image (9).png>)
+
+\[줄 수 (Media Medium인 경우, 접혀있는 경우)]
+
+![](<../.gitbook/assets/image (7).png>)
+
+**MMS (Carousel Medium – 슬라이드형)**
+
+![](<../.gitbook/assets/image (10).png>)
+
+\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]
+
+![](<../.gitbook/assets/image (5).png>)
+
+\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]
+
+![](<../.gitbook/assets/image (11).png>)
+
+**MMS (Carousel Small – 슬라이드형)**
+
+![](<../.gitbook/assets/image (3).png>)
+
+\[줄 수 (Media Short인 경우, RCS A2P 단말 기준)]
+
+![](<../.gitbook/assets/image (12).png>)
+
+
+
+### RCS BODY
 
 리치카드 개수 및 순서에 따라 넘버링 (ex. title1, title2, ...)
 
@@ -61,6 +101,18 @@ VALUES (
 
 * 비즈뿌리오 사이트 \[메시지관리] - \[RCS 관리] - \[RCS 이미지 관리] 에서 이미지를 등록하여 사용합니다. 이미지는 등록일로부터 <mark style="color:orange;">365일간 발송 가능</mark>합니다. (이후 자동 삭제)
 
+> **포맷**&#x20;
+>
+> maapfile://{fileId}
+>
+> &#x20;****&#x20;
+>
+> **예시**&#x20;
+>
+> "media" : "maapfile://BR.i6dOpSm8N8.20200302150000.001"
+
+
+
 {% hint style="info" %}
 **URL 예시 ( maapfile://{fileId} )**
 
@@ -75,17 +127,21 @@ VALUES (
     (콤마(,) 외 공백을 포함하는 경우 실패)
 * 동영상 발송 시 Footer에 '동영상 재생 시 데이터 요금제가 적용됩니다.'라는 문구 자동 삽입
 
-{% hint style="info" %}
-**URL 예시 ( https://youtu.be/\[VideoId],maapfile://{썸네일용 fileId} )**
+> **포맷**&#x20;
+>
+> https://www.youtube.com/watch?v=\[videoId],maapfile://{썸네일용 fileId\_1}
+>
+> https://youtu.be/\[VideoId],maapfile://{썸네일용 fileId\_2}
+>
+> https://m.youtube.com/watch?v=\[videoId],maapfile://{썸네일용 fileId\_3}
+>
+> &#x20;
+>
+> **예시**&#x20;
+>
+> "media1" : "https://www.youtube.com/watch?v=KCbtF9I0qvI,maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
-"media1":"https://www.youtube.com/watch?v=\[videoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
-"media2":"https://youtu.be/\[VideoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
-
-"media3":"https://m.youtube.com/watch?v=\[videoId],maapfile://BR.i6dOpSm8N8.20200302150000.001"
-
-***
-{% endhint %}
 
 ### RCS + BUTTONS
 
@@ -159,7 +215,7 @@ VALUES (
 
 **Action 예시**
 
-버튼 표현 방식 3장의 카드이고 2, 0, 1의 버튼이 있다고 가정하면 \*\*\*\* BUTTONS는 아래와 같이 구성 할 수 있습니다.\
+버튼 표현 방식 3장의 카드이고 2, 0, 1의 버튼이 있다고 가정하면 BUTTONS는 아래와 같이 구성 할 수 있습니다.\
 (JSON KEY 대소문자 구분)
 
 ```json5
