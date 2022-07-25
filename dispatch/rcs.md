@@ -19,39 +19,29 @@ VALUES (
 
 ![](<../.gitbook/assets/image (8).png>)
 
-> RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.
+> **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
-> 수신 가능한 글자 수는 포토여부/타이틀 글자 수/버튼 개수에 따라 다릅니다.
+> **수신 가능한 글자 수는 포토여부/타이틀 글자 수/버튼 개수에 따라 다릅니다.**
 
-> 포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
-
-> **\*글자수 및 라인수 정의**
+> **RCS MMS 슬라이드형 글자/ 라인수 정의**&#x20;
 >
 > 글자 수 : 1줄 당 정상적으로 표현가능한 글자 수, 한글 **'**가' 기준 측정
 >
-> 줄(라인) 수 : expand 없이 메시지 버블 최대크기에서 표현 가능한 description 줄 수&#x20;
+> 라인 수 : 수신 가능한 디스크립션(본문) 줄 수
 
 **아래는 MMS 항목에 대한 글자수를 나타낸 표입니다.**
 
 **MMS (Carousel Medium – 슬라이드형)**
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (14).png>)
 
-\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]
-
-![](<../.gitbook/assets/image (5).png>)
-
-\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]
-
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (15).png>)
 
 **MMS (Carousel Small – 슬라이드형)**
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (6).png>)
 
-\[줄 수 (Media Short인 경우, RCS A2P 단말 기준)]
-
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (16).png>)
 
 
 

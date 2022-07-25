@@ -205,7 +205,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 **supplement**
 
-![](<../.gitbook/assets/image (6) (1).png>)
+![](<../.gitbook/assets/image (6) (1) (1).png>)
 
 ### **AT/FT + BUTTON**
 
