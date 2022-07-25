@@ -201,7 +201,7 @@ VALUES (7, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
 
 Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)
 
 **supplement**
 
