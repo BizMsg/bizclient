@@ -29,8 +29,6 @@ VALUES (
 >
 > 라인 수 : 수신 가능한 디스크립션(본문) 줄 수
 
-**아래는 MMS 항목에 대한 글자수를 나타낸 표입니다.**
-
 **MMS (Carousel Medium – 슬라이드형)**
 
 ![](<../.gitbook/assets/image (14).png>)
