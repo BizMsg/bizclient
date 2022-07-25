@@ -33,18 +33,6 @@ VALUES (
 
 **아래는 MMS 항목에 대한 글자수를 나타낸 표입니다.**
 
-**MMS (Standalone Media Top – 세로형)**
-
-![](<../.gitbook/assets/image (6).png>)
-
-\[줄 수 (Media Tall인 경우, 접혀있는 경우)]
-
-![](<../.gitbook/assets/image (9).png>)
-
-\[줄 수 (Media Medium인 경우, 접혀있는 경우)]
-
-![](<../.gitbook/assets/image (7).png>)
-
 **MMS (Carousel Medium – 슬라이드형)**
 
 ![](<../.gitbook/assets/image (10).png>)
