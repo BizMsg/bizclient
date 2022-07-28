@@ -21,7 +21,7 @@ VALUES (
 
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
-> **수신 가능한 글자 수는 포토여부/타이틀 글자 수/버튼 개수에 따라 다릅니다.**
+> **아래 글자/라인수 정의 확인하시어 발송하시기 바랍니다.**&#x20;
 
 > **RCS MMS 슬라이드형 글자/ 라인수 정의**&#x20;
 >
@@ -29,13 +29,11 @@ VALUES (
 >
 > 라인 수 : 수신 가능한 디스크립션(본문) 줄 수
 
-**MMS (Carousel Medium – 슬라이드형)**
-
-![](<../.gitbook/assets/image (14).png>)
+**Carousel Medium**
 
 ![](<../.gitbook/assets/image (15).png>)
 
-**MMS (Carousel Small – 슬라이드형)**
+**Carousel Small**
 
 ![](<../.gitbook/assets/image (6).png>)
 
