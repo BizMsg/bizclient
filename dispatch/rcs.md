@@ -318,7 +318,7 @@ Highlighted image n title (이미지 & 타이틀 강조형)
 
 ```
 
-**이미지 강조형, SNS형**
+이미지 강조형, SNS형
 
 ```json5
 {
@@ -357,7 +357,7 @@ Highlighted image n title (이미지 & 타이틀 강조형)
 
 ```
 
-**썸네일형 (세로)**
+썸네일형 (세로)
 
 ```json5
 {
@@ -401,7 +401,7 @@ Highlighted image n title (이미지 & 타이틀 강조형)
 
 ```
 
-**썸네일형 (가로)**
+썸네일형 (가로)
 
 ```json5
 {
