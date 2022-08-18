@@ -160,7 +160,7 @@ VALUES (
 
 ```json5
 {
-  "Buttons": [
+"buttons"
     {
       "suggestions": [
         {
