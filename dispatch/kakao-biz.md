@@ -441,3 +441,18 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
   }
 }
 ```
+
+
+
+### 카카오톡 이모티콘 삽입
+
+카카오톡 기본 이모티콘 삽입을 원할 경우 이모티콘에 해당하는 명령어를 입력합니다.
+
+예) 안녕하세요 (하하)(씨익)
+
+<figure><img src="../.gitbook/assets/카카오톡 이모티콘 이름 (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+카카오에서 공식적으로 지원하는 기능이 아니므로 명령어에 대한 변경이 있을 수 있습니다.
+{% endhint %}
+
