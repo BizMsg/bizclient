@@ -211,7 +211,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 **버튼 타입**
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (2).png>)
 
 #### AT/FT + 버튼 타입별 속성
 
