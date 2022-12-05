@@ -31,6 +31,8 @@ VALUES (
 
 **Carousel Medium**
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ![](<../.gitbook/assets/image (15).png>)
 
 **Carousel Small**
