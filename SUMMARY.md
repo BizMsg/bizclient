@@ -23,7 +23,7 @@
   * [공통](result-code/common.md)
   * [SMS](result-code/sms.md)
   * [MMS/LMS](result-code/mms-lms.md)
-  * [카카오 비즈 메시지](result-code/kakao-biz.md)
+  * [카카오톡 비즈메시지](result-code/kakao-biz.md)
   * [RCS](result-code/rcs.md)
   * [PHONE](result-code/phone.md)
   * [FAX](result-code/fax.md)
