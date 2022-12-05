@@ -256,7 +256,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 #### AT + 바로연결 타입별 속성
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (3).png>)
 
 **바로연결 첨부파일 예시**
 
