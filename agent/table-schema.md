@@ -17,7 +17,7 @@
 
 _\*표시 컬럼은 비즈클라이언트에서 사용_
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 > 추가적인 인덱스는 필요에 따라 설정하여 사용하시면 됩니다.
 >
