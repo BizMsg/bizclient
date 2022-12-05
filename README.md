@@ -11,7 +11,7 @@ description: 비즈클라이언트 (BizClient)
 ### 선결 조건
 
 1. 서비스 계정 생성\
-   biz.ppurio.com 회원가입
+   bizppurio.com 회원가입
 2. 서비스 사용 승인요청\
    문의전화 : 1599-9782\
    E-mail : bizppurio@daou.co.kr
