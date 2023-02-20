@@ -35,7 +35,7 @@ VALUES (
 
 \[글자 수]
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 \[줄 수(접혀있는 경우)]
 
