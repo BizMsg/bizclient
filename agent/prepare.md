@@ -24,8 +24,6 @@ description: 비즈클라이언트를 사용하기 위한 서버 요구사항
 | SYBASE |  CACHE | DB2(AS400) |
 | CUBRID |   EDB  | POSTGRESQL |
 
-
-
 {% hint style="info" %}
 Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 설정이 필요
 {% endhint %}
@@ -55,3 +53,18 @@ _경로 : **{모듈위치}/lib/jdbc/{해당 JDBC 드라이버}.jar**_\
 {% hint style="info" %}
 한 계정을 여러 클라이언트 모듈에 세팅할 경우 리포트가 분산되어 정상적으로 반영되지 않을 수 있습니다.
 {% endhint %}
+
+
+
+### 이모지 발송 DBMS Charset 설정
+
+알림톡, RCS 와 같은 메시지에 이모지를 추가하여 발송하길 희망하는 경우 DB Charset을 다음과 같이 맞추어 주시길 바랍니다.
+
+이모지 사용 가능한 메시지 타입은 [메시지발송](../dispatch/#msg\_type) 항목을 참조해 주십시오
+
+|           DBMS          |       Version      |              Character Set             |
+| :---------------------: | :----------------: | :------------------------------------: |
+| <p>MySQL<br>MariaDB</p> |      5.5.3 이상      |          UTF8MB4\_GENERAL\_CI          |
+|          Oracle         |        9i 이상       |                AL32UTF8                |
+|          MSSQL          | SQL Server 2017 이상 | Latin1\_General\_100\_CI\_AI\_SC\_UTF8 |
+
