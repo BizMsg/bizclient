@@ -51,11 +51,11 @@ VALUES (6, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
 ```sql
 INSERT INTO biz_msg (
 MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, 
-DEST_PHONE, SEND_PHONE, MSG_BODY, TEMPLATE_CODE, SENDER_KEY, NATION_CODE)
+DEST_PHONE, SEND_PHONE, MSG_BODY, SENDER_KEY, NATION_CODE)
 
 VALUES (
 6, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
-'홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', {템플릿코드}, {발신프로필키}, '82'
+'홍길동 고객님 다우기술 비즈메시지 프로모션에 당첨 되었습니다.', {발신프로필키}, '82'
 ```
 
 ### 대체 발송 타입 (RE\_TYPE)
