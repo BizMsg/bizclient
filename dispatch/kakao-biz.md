@@ -417,7 +417,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
     "img_link": "http://bizmessage.kakao.com/"
   },
   "extra": {
-    "wide": "Y"
+    "wide": "Y" //와이드형 이미지일경우에만 기재
   }
 }
 ```
