@@ -4,48 +4,5 @@ description: 알림톡/친구톡
 
 # 카카오톡 비즈메시지
 
-|  코드  |                                        설명                                       |
-| :--: | :-----------------------------------------------------------------------------: |
-| 7000 |                                        전달                                       |
-| 7101 |                                    카카오 형식 오류                                    |
-| 7103 |                           Sender key (발신 프로필키) 유효하지 않음                          |
-| 7106 |                             삭제된 Sender key (발신 프로필키)                            |
-| 7107 |                            차단 상태 Sender key (발신 프로필키)                           |
-| 7108 |                    <p>차단 상태 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</p>                   |
-| 7109 |                    <p>닫힌 상태 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</p>                   |
-| 7110 |                     <p>삭제된 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</p>                    |
-| 7111 |                  <p>삭제 대기 상태의 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</p>                 |
-| 7112 |                                  유효하지 않은 사업자번호                                  |
-| 7125 |                 <p>메시지 차단 상태의 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</p>                 |
-| 7203 |                                 친구톡 전송 시 친구대상 아님                                |
-| 7204 |                                     템플릿 불일치                                     |
-| 7206 |                                   시리얼넘버 형식 불일치                                  |
-| 7300 |                                       기타에러                                      |
-| 7305 |                         <p>성공 불확실<br>(30 일 이내 수신 가능)</p>                        |
-| 7306 |                                    카카오 시스템 오류                                   |
-| 7308 |                                     전화번호 오류                                     |
-| 7311 |                                   메시지가 존재하지 않음                                  |
-| 7314 |                                    메시지 길이 초과                                    |
-| 7315 |                                      템플릿 없음                                     |
-| 7318 |                                  메시지를 전송할 수 없음                                  |
-| 7322 |                                   메시지 발송 불가 시간                                  |
-| 7324 |                                 재전송 메시지 존재하지 않음                                 |
-| 7325 |                                   변수 글자수 제한 초과                                  |
-| 7326 |                        상담/봇 전환 버튼 extra, event 글자수 제한 초과                        |
-| 7327 |                               버튼 내용이 템플릿과 일치하지 않음                               |
-| 7328 |                           메시지 강조 표기 타이틀이 템플릿과 일치하지 않음                           |
-| 7329 |                          메시지 강조 표기 타이틀 길이 제한 초과 (50 자)                          |
-| 7330 |                            메시지 타입과 템플릿 강조유형이 일치하지 않음                            |
-| 7331 |                                 헤더가 템플릿과 일치하지 않음                                |
-| 7332 |                                헤더 길이 제한 초과(16 자)                                |
-| 7333 |                             아이템 하이라이트가 템플릿과 일치하지 않음                             |
-| 7334 |        <p>아이템 하이라이트 타이틀 길이 제한 초과<br>(이미지 없는 경우 30 자, 이미지 있는 경우 21 자)</p>        |
-| 7335 |       <p>아이템 하이라이트 디스크립션 길이 제한 초과<br>(이미지 없는 경우 19 자, 이미지 있는 경우 13 자)</p>       |
-| 7336 |                              아이템 리스트가 템플릿과 일치하지 않음                              |
-| 7337 |                        아이템 리스트의 아이템의 디스크립션 길이 제한 초과(23 자)                       |
-| 7338 |                              아이템 요약정보가 템플릿과 일치하지 않음                             |
-| 7339 |                          아이템 요약정보의 디스크립션 길이 제한 초과(14 자)                         |
-| 7340 | <p>아이템 요약정보의 디스크립션에 허용되지 않은 문자 포함<br>(통화 기호/코드, 숫자, 콤마, 소수점, 공백을 제외한 문자 포함)</p> |
-| 7421 |                                       타임아웃                                      |
-| 7521 |                                      중복발신제한                                     |
+<table><thead><tr><th width="294.5" align="center">코드</th><th align="center">설명</th></tr></thead><tbody><tr><td align="center">7000</td><td align="center">전달</td></tr><tr><td align="center">7101</td><td align="center">카카오 형식 오류</td></tr><tr><td align="center">7103</td><td align="center">Sender key (발신 프로필키) 유효하지 않음</td></tr><tr><td align="center">7106</td><td align="center">삭제된 Sender key (발신 프로필키)</td></tr><tr><td align="center">7107</td><td align="center">차단 상태 Sender key (발신 프로필키)</td></tr><tr><td align="center">7108</td><td align="center">차단 상태 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</td></tr><tr><td align="center">7109</td><td align="center">닫힌 상태 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</td></tr><tr><td align="center">7110</td><td align="center">삭제된 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</td></tr><tr><td align="center">7111</td><td align="center">삭제 대기 상태의 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</td></tr><tr><td align="center">7112</td><td align="center">유효하지 않은 사업자번호</td></tr><tr><td align="center">7125</td><td align="center">메시지 차단 상태의 카카오톡 채널<br>(카카오톡 채널 운영툴에서 확인)</td></tr><tr><td align="center">7203</td><td align="center">친구톡 전송 시 친구대상 아님</td></tr><tr><td align="center">7204</td><td align="center">템플릿 불일치</td></tr><tr><td align="center">7206</td><td align="center">시리얼넘버 형식 불일치</td></tr><tr><td align="center">7300</td><td align="center">기타에러</td></tr><tr><td align="center">7305</td><td align="center">성공 불확실<br>(30 일 이내 수신 가능)</td></tr><tr><td align="center">7306</td><td align="center">카카오 시스템 오류</td></tr><tr><td align="center">7308</td><td align="center">전화번호 오류</td></tr><tr><td align="center">7311</td><td align="center">메시지가 존재하지 않음</td></tr><tr><td align="center">7314</td><td align="center">메시지 길이 초과</td></tr><tr><td align="center">7315</td><td align="center">템플릿 없음</td></tr><tr><td align="center">7318</td><td align="center">메시지를 전송할 수 없음</td></tr><tr><td align="center">7322</td><td align="center">메시지 발송 불가 시간</td></tr><tr><td align="center">7324</td><td align="center">재전송 메시지 존재하지 않음</td></tr><tr><td align="center">7325</td><td align="center">변수 글자수 제한 초과</td></tr><tr><td align="center">7326</td><td align="center">상담/봇 전환 버튼 extra, event 글자수 제한 초과</td></tr><tr><td align="center">7327</td><td align="center">버튼 내용이 템플릿과 일치하지 않음</td></tr><tr><td align="center">7328</td><td align="center">메시지 강조 표기 타이틀이 템플릿과 일치하지 않음</td></tr><tr><td align="center">7329</td><td align="center">메시지 강조 표기 타이틀 길이 제한 초과 (50 자)</td></tr><tr><td align="center">7330</td><td align="center">메시지 타입과 템플릿 강조유형이 일치하지 않음</td></tr><tr><td align="center">7331</td><td align="center">헤더가 템플릿과 일치하지 않음</td></tr><tr><td align="center">7332</td><td align="center">헤더 길이 제한 초과(16 자)</td></tr><tr><td align="center">7333</td><td align="center">아이템 하이라이트가 템플릿과 일치하지 않음</td></tr><tr><td align="center">7334</td><td align="center">아이템 하이라이트 타이틀 길이 제한 초과<br>(이미지 없는 경우 30 자, 이미지 있는 경우 21 자)</td></tr><tr><td align="center">7335</td><td align="center">아이템 하이라이트 디스크립션 길이 제한 초과<br>(이미지 없는 경우 19 자, 이미지 있는 경우 13 자)</td></tr><tr><td align="center">7336</td><td align="center">아이템 리스트가 템플릿과 일치하지 않음</td></tr><tr><td align="center">7337</td><td align="center">아이템 리스트의 아이템의 디스크립션 길이 제한 초과(23 자)</td></tr><tr><td align="center">7338</td><td align="center">아이템 요약정보가 템플릿과 일치하지 않음</td></tr><tr><td align="center">7339</td><td align="center">아이템 요약정보의 디스크립션 길이 제한 초과(14 자)</td></tr><tr><td align="center">7340</td><td align="center">아이템 요약정보의 디스크립션에 허용되지 않은 문자 포함<br>(통화 기호/코드, 숫자, 콤마, 소수점, 공백을 제외한 문자 포함)</td></tr><tr><td align="center">7421</td><td align="center">타임아웃</td></tr><tr><td align="center">7521</td><td align="center">중복발신제한</td></tr></tbody></table>
 

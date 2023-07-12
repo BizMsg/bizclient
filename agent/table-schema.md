@@ -38,7 +38,7 @@ CMID 필드에 ASCII 범위 외의 문자를 사용하길 희망하는 경우 �
 > *   &#x20;N: ASCII 범위 외 한글 및 특수문자를 포함하려는 경우 사용합니다.
 >
 >     **\* 주의사항 \***\
->     ****- 허용 불가한 CMID 가 입력될 경우에는 발송이 실패할 수 있습니다.
+>     \- 허용 불가한 CMID 가 입력될 경우에는 발송이 실패할 수 있습니다.
 
 
 
@@ -63,7 +63,7 @@ RCS\_BACKUP\_OPTION(Y/N, default N)을 사용하지 않으면\
 RCS 메시지 테이블의 데이터를 재사용 할 수 있습니다.
 {% endhint %}
 
-![](<../.gitbook/assets/image (3) (1) (1).png>)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../appendix.md#rcs-agency\_id-id) 설정 참고

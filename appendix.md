@@ -119,11 +119,7 @@ VALUES (
 
 **BIZ\_ATTACHMENTS TABLE**
 
-| MSG\_KEY |  SEQ | TYPE |                                 CONTENTS                                 |
-| :------: | :--: | :--: | :----------------------------------------------------------------------: |
-|  msgKey1 | {숫자} | FILE |                              **{첨부파일명.jpg}**                             |
-|  msgKey1 | {숫자} | HTTP | [http://www.daou.co.kr/file/jpg.jpg](http://www.daou.co.kr/file/jpg.jpg) |
-|  msgKey1 | {숫자} | JSON |                           아래 **msgKey JSON** 참고                          |
+<table><thead><tr><th width="150" align="center">MSG_KEY</th><th width="150" align="center">SEQ</th><th width="150" align="center">TYPE</th><th width="332" align="center">CONTENTS</th></tr></thead><tbody><tr><td align="center">msgKey1</td><td align="center">{숫자}</td><td align="center">FILE</td><td align="center"><strong>{첨부파일명.jpg}</strong></td></tr><tr><td align="center">msgKey1</td><td align="center">{숫자}</td><td align="center">HTTP</td><td align="center"><a href="http://www.daou.co.kr/file/jpg.jpg">http://www.daou.co.kr/file/jpg.jpg</a></td></tr><tr><td align="center">msgKey1</td><td align="center">{숫자}</td><td align="center">JSON</td><td align="center">아래 <strong>msgKey JSON</strong> 참고</td></tr></tbody></table>
 
 **msgKey JSON**
 

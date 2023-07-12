@@ -17,7 +17,7 @@ VALUES (
 
 ### RCS 공통포맷 (MESSAGEBASE\_ID)
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
@@ -29,7 +29,7 @@ VALUES (
 >
 > 라인 수 : 수신 가능한 디스크립션(본문) 줄 수
 
-****
+
 
 **LMS (Standalone No Media)**
 
@@ -130,7 +130,7 @@ VALUES (
  }
 ```
 
-****
+
 
 **media 종류**
 
@@ -142,7 +142,7 @@ VALUES (
 >
 > maapfile://{fileId}
 >
-> &#x20;****&#x20;
+> &#x20;
 >
 > **예시**&#x20;
 >

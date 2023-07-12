@@ -18,11 +18,8 @@ description: 비즈클라이언트를 사용하기 위한 서버 요구사항
 
 #### 지원 가능 DBMS
 
-|        |        |            |
-| :----: | :----: | :--------: |
-|  MySQL | ORACLE |    MSSQL   |
-| SYBASE |  CACHE | DB2(AS400) |
-| CUBRID |   EDB  | POSTGRESQL |
+* Mysql, Oracle, MSSQL -> 지원 가능
+* SYBASE, DB2, DB2 AS400, CUBRID, EDB, PostgreSQL -> 버전에 따라 지원여부 상이
 
 {% hint style="info" %}
 Microsoft SQL Server 2008 이상 사용하는 경우 **DBNAME=MSSQL2005** 로 설정이 필요
@@ -62,9 +59,5 @@ _경로 : **{모듈위치}/lib/jdbc/{해당 JDBC 드라이버}.jar**_\
 
 이모지 사용 가능한 메시지 타입은 [메시지발송](../dispatch/#msg\_type) 항목을 참조해 주십시오
 
-|           DBMS          |       Version      |              Character Set             |
-| :---------------------: | :----------------: | :------------------------------------: |
-| <p>MySQL<br>MariaDB</p> |      5.5.3 이상      |          UTF8MB4\_GENERAL\_CI          |
-|          Oracle         |        9i 이상       |                AL32UTF8                |
-|          MSSQL          | SQL Server 2017 이상 | Latin1\_General\_100\_CI\_AI\_SC\_UTF8 |
+<table><thead><tr><th width="149.66666666666666" align="center">DBMS</th><th align="center">Version</th><th align="center">Character Set</th></tr></thead><tbody><tr><td align="center">MySQL<br>MariaDB</td><td align="center">5.5.3 이상</td><td align="center">UTF8MB4_GENERAL_CI</td></tr><tr><td align="center">Oracle</td><td align="center">9i 이상</td><td align="center">AL32UTF8</td></tr><tr><td align="center">MSSQL</td><td align="center">SQL Server 2017 이상</td><td align="center">Latin1_General_100_CI_AI_SC_UTF8</td></tr></tbody></table>
 
