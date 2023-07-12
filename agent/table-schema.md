@@ -63,7 +63,7 @@ RCS\_BACKUP\_OPTION(Y/N, default N)을 사용하지 않으면\
 RCS 메시지 테이블의 데이터를 재사용 할 수 있습니다.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../appendix.md#rcs-agency\_id-id) 설정 참고
