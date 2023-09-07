@@ -211,11 +211,11 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 **버튼 타입**
 
-![](<../.gitbook/assets/image (4) (2).png>)
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 #### AT/FT + 버튼 타입별 속성
 
-![](<../.gitbook/assets/image (9) (1) (1).png>)
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 #### 버튼 첨부파일 예시
 
@@ -256,7 +256,7 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
 #### AT + 바로연결 타입별 속성
 
-![](<../.gitbook/assets/image (7) (3).png>)
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **바로연결 첨부파일 예시**
 
