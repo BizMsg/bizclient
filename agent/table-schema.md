@@ -30,7 +30,7 @@ _\*표시 컬럼은 비즈클라이언트에서 사용_
 
 ### 발송상태변화(STATUS)
 
-<figure><img src="../.gitbook/assets/발송상태변화.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/발송상태변화 (1).png" alt=""><figcaption></figcaption></figure>
 
 ※ status = 7 인 경우, 실발송 되지 않은 데이터입니다.
 
@@ -83,7 +83,7 @@ AGENCY\_ID(대행사 ID) 사용 시 [RCS AGENCY\_ID(대행사 ID)](../appendix.m
 
 ***
 
-<figure><img src="../.gitbook/assets/RCS테이블컬럼.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/RCS테이블컬럼 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FILE\_HANDLING\_MODE
 
