@@ -19,6 +19,12 @@ VALUES (
 
 <figure><img src="../.gitbook/assets/RCS(Agent).png" alt=""><figcaption></figcaption></figure>
 
+> \*포토여부/타이틀 글자 수/버튼 개수에 따라 입력 가능한 본문 글자 수가 상이할 수 있습니다.
+>
+> \*이미지 사이즈 규격 일치해야 정상적으로 발송됩니다.
+>
+>
+>
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
 > **아래 글자/라인수 정의 확인하시어 발송하시기 바랍니다.**&#x20;
