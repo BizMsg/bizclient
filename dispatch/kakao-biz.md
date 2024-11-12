@@ -197,7 +197,7 @@ VALUES (7, '201XXXXXXXXX', NOW(), NOW(), '01012341234', '0212341234',
 
 ***
 
-### AT/FT ATTACHMENT 정보
+### AT ATTACHMENT 정보
 
 Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 
@@ -206,6 +206,14 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
 **supplement**
 
 ![](<../.gitbook/assets/image (6) (1) (1).png>)
+
+### FT ATTACHMENT 정보
+
+<figure><img src="../.gitbook/assets/ft_client_attachments.png" alt=""><figcaption></figcaption></figure>
+
+Carousel
+
+<figure><img src="../.gitbook/assets/carousel.png" alt=""><figcaption></figcaption></figure>
 
 ### **AT/FT + BUTTON**
 
@@ -441,8 +449,6 @@ Key:supplement 항목은 아래 이어지는 supplement 테이블을 참고
   }
 }
 ```
-
-
 
 ### 카카오톡 이모티콘 삽입
 
